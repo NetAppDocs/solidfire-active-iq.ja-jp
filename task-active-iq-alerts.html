@@ -1,0 +1,1825 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head class="at-element-marker">
+  <title>アラート</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="アラート" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/solidfire-active-iq/task-active-iq-alerts.html" />
+	<meta property="og:description" content="SolidFire Active IQ のアラート関連タスクについて説明します。" />
+  <meta property="og:image" content="https://docs.netapp.com/ja-jp/solidfire-active-iq/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="SolidFire Active IQ のアラート関連タスクについて説明します。">
+  <meta name="keywords" content=" solidfire, active, iq, alerts"><!-- Icons -->
+  <link rel="icon" href="/ja-jp/solidfire-active-iq/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/solidfire-active-iq/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/ja-jp/solidfire-active-iq/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/solidfire-active-iq/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/solidfire-active-iq/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/ja-jp/solidfire-active-iq/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/ja-jp/solidfire-active-iq/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/ja-jp/solidfire-active-iq/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/ja-jp/solidfire-active-iq/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/ja-jp/solidfire-active-iq/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/ja-jp/solidfire-active-iq/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/solidfire-active-iq/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/solidfire-active-iq/css/custom-dropdown.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/solidfire-active-iq/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/ja-jp/solidfire-active-iq/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ja-jp/solidfire-active-iq/css/tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/ja-jp/solidfire-active-iq/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    function addAdobeLaunch(adobeId) {
+      var head = document.getElementsByTagName('head')[0];
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/"+adobeId+".min.js";
+      head.appendChild(adobe);
+    }
+
+    function addGoogleAnalytics(gtagId) {
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id="+gtagId;
+      var head = document.getElementsByTagName('head')[0];
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gtagId);
+    }
+
+    function addConsent(consentId) {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/"+consentId+"/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = consentId;
+      head.appendChild(onetrustScript);
+    }addConsent("72570c5c-fe30-465f-b0e0-b77f7fb4ae34");
+    addAdobeLaunch("launch-e9ff3acac59f");
+    addGoogleAnalytics("UA-81697994-3");function OptanonWrapper() { }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ja-jp/solidfire-active-iq/js/na-search.js'></script><script src='/ja-jp/solidfire-active-iq/js/na-pagenav.js'></script><link rel='stylesheet' href='/ja-jp/solidfire-active-iq/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/solidfire-active-iq/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/ja-jp/solidfire-active-iq/js/na-utility.js'></script>
+  <script src='/ja-jp/solidfire-active-iq/js/clouddocs.js'></script>
+  <script src='/ja-jp/solidfire-active-iq/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/ja-jp/solidfire-active-iq/js/toc.js'></script>
+  <script src='/ja-jp/solidfire-active-iq/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script>
+  <script src='/ja-jp/solidfire-active-iq/js/custom-dropdown.js'></script>
+  <script src='/ja-jp/solidfire-active-iq/js/FileSaver.min.js'></script>
+  <script src='/ja-jp/solidfire-active-iq/js/jszip-utils.min.js'></script>
+  <script src='/ja-jp/solidfire-active-iq/js/jszip.min.js'></script>
+  <script src='/ja-jp/solidfire-active-iq/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document" data-flavor="">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/solidfire-active-iq/issues/new?body=Page%3A%20[アラート](https://docs.netapp.com/ja-jp/solidfire-active-iq/task-active-iq-alerts.html)&template=public-issue-template.md" class="page-nav-contribute-link" role="button"><img src="/ja-jp/solidfire-active-iq/images/discuss-sm.svg" alt="" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/solidfire-active-iq/blob/main/task-active-iq-alerts.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/solidfire-active-iq/images/edit-sm.svg" alt="" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/solidfire-active-iq/images/article-sm.svg" alt="" class="github-icon" />寄稿者向けガイド</a></div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">このページ</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">製品とソリューション</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">サポートとトレーニング</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">コミュニティ</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">ブログ</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">ユーザ事例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/ja-jp/solidfire-active-iq/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/ja-jp/solidfire-active-iq/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/ja-jp/solidfire-active-iq/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/ja-jp/solidfire-active-iq/search.html"
+          data-type="widget" 
+          data-placeholder="ドキュメントを検索"
+          data-no-results-found="{query}に該当する結果はありません"
+          data-did-you-mean="{suggestion} を検索"
+          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?"
+          data-results-found="{hitCount} 件見つかりました"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
+          data-sk-es-pf-indexes=""
+          data-flavor=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/solidfire-active-iq/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/solidfire-active-iq/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/solidfire-active-iq/task-active-iq-alerts.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/solidfire-active-iq/task-active-iq-alerts.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/solidfire-active-iq/task-active-iq-alerts.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/solidfire-active-iq/task-active-iq-alerts.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/solidfire-active-iq/task-active-iq-alerts.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <button id="btn-sidebar-collapse" onclick="hideSidebar()"><img src="/ja-jp/solidfire-active-iq/images/collapse.png" alt="ナビゲーション パネルを閉じる"></button>
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/ja-jp/solidfire-active-iq/images/pdf.png" alt="" width="16" height="16"/>利用可能なPDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
+        <a target="_blank" href="/ja-jp/solidfire-active-iq/pdfs/fullsite-sidebar/NetApp_SolidFire_Active_IQ_の略.pdf" >
+          <img src="/ja-jp/solidfire-active-iq/images/pdf.png" alt="" width="16" height="16"/>このドキュメントサイトのPDF</a>
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/ja-jp/solidfire-active-iq/pdfs/sidebar/NetApp_SolidFire_Active_IQ_の略.pdf" 
+            
+          >
+            <img src="/ja-jp/solidfire-active-iq/images/pdf.png" alt="" width="16" height="16"/>
+            NetApp SolidFire Active IQ の略
+          </a>
+          
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/ja-jp/solidfire-active-iq/pdfs/sidebar/SolidFire_Active_IQ_の利用を開始しましょう.pdf" 
+            
+          >
+            <img src="/ja-jp/solidfire-active-iq/images/pdf.png" alt="" width="16" height="16"/>
+            SolidFire Active IQ の利用を開始しましょう
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/ja-jp/solidfire-active-iq/pdfs/sidebar/SolidFire_Active_IQ_を管理します.pdf" 
+            
+          >
+            <img src="/ja-jp/solidfire-active-iq/images/pdf.png" alt="" width="16" height="16"/>
+            SolidFire Active IQ を管理します
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/ja-jp/solidfire-active-iq/pdfs/sidebar/すべてのクラスタビュー.pdf" 
+            
+          >
+            <img src="/ja-jp/solidfire-active-iq/images/pdf.png" alt="" width="16" height="16"/>
+            すべてのクラスタビュー
+          </a>
+          
+
+
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/ja-jp/solidfire-active-iq/pdfs/sidebar/クラスタを選択します.pdf" 
+            
+          >
+            <img src="/ja-jp/solidfire-active-iq/images/pdf.png" alt="" width="16" height="16"/>
+            クラスタを選択します
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/ja-jp/solidfire-active-iq/pdfs/sidebar/ノード.pdf" 
+            
+          >
+            <img src="/ja-jp/solidfire-active-iq/images/pdf.png" alt="" width="16" height="16"/>
+            ノード
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" 
+            
+              href="/ja-jp/solidfire-active-iq/pdfs/sidebar/個のボリューム.pdf" 
+            
+          >
+            <img src="/ja-jp/solidfire-active-iq/images/pdf.png" alt="" width="16" height="16"/>
+            個のボリューム
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/ja-jp/solidfire-active-iq/images/pdf-zip.png" alt="" width="16" height="16"/>
+      <pre>個別のPDFドキュメントのコレクション<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container" id="mysidebardiv">
+  <ul id="mysidebar" class="nav"><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp SolidFire Active IQ の略"
+      data-li-level="1" 
+      class="subfolders "
+    ><a href="/ja-jp/solidfire-active-iq/index.html">
+        <div class="na-navbar-padding"> NetApp SolidFire Active IQ の略</div>
+      </a>
+      <ul>
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SolidFire Active IQ の利用を開始しましょう"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> SolidFire Active IQ の利用を開始しましょう</div>
+      </a>
+      <ul>
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概要"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-get-started-overview.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SolidFire Active IQ の詳細をご覧ください"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/concept-active-iq-learn-about-active-iq.html">
+        SolidFire Active IQ の詳細をご覧ください
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SolidFire Active IQ レポートを有効にします"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-enable-reporting.html">
+        SolidFire Active IQ レポートを有効にします
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Active IQ UIを使用"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-use-the-user-interface.html">
+        Active IQ UIを使用
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SolidFire Active IQ を管理します"
+      data-li-level="2" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> SolidFire Active IQ を管理します</div>
+      </a>
+      <ul>
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概要"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-manage-overview.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="すべてのクラスタビュー"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> すべてのクラスタビュー</div>
+      </a>
+      <ul>
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概要"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-all-clusters-view-overview.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="すべてのクラスタビューダッシュボード"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-all-clusters-view-dashboard.html">
+        すべてのクラスタビューダッシュボード
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アラート"
+      data-li-level="4#" 
+      class="  active "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-alerts.html">
+        アラート
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="容量ベースのライセンス"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-capacity-licensing.html">
+        容量ベースのライセンス
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="期間容量"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-term-capacity.html">
+        期間容量
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="クラスタを選択します"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> クラスタを選択します</div>
+      </a>
+      <ul>
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概要"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-select-cluster-overview.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="単一のクラスタビューダッシュボード"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-single-cluster-view-dashboard.html">
+        単一のクラスタビューダッシュボード
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="レポート作成"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-reporting-options.html">
+        レポート作成
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ノード"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> ノード</div>
+      </a>
+      <ul>
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概要"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-nodes-overview.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アクティブノード"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-active-nodes.html">
+        アクティブノード
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ノードスロットル"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-node-throttling.html">
+        ノードスロットル
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ドライブ"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task_active_iq_drives.html">
+        ドライブ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="個のボリューム"
+      data-li-level="3" 
+      class="subfolders "
+    ><a href="#">
+        <div class="na-navbar-padding"> 個のボリューム</div>
+      </a>
+      <ul>
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概要"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task_active_iq_volumes_overview.html">
+        概要
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="アクティブなボリューム"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-active-volumes.html">
+        アクティブなボリューム
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SnapshotとSnapshotスケジュール"
+      data-li-level="4#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-snapshots-and-schedules.html">
+        SnapshotとSnapshotスケジュール
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="レプリケーション"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task_active_iq_replication.html">
+        レプリケーション
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="仮想ボリューム"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-virtual-volumes.html">
+        仮想ボリューム
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="QoSに関する推奨事項"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-qos-recommendations.html">
+        QoSに関する推奨事項
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="仮想マシン"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-virtual-machines.html">
+        仮想マシン
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VMwareアラーム"
+      data-li-level="3#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-vmware-alarms.html">
+        VMwareアラーム
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="トラブルシューティングとサポート"
+      data-li-level="2#" 
+      class=" "
+    ><a class="na-navbar-padding" href="/ja-jp/solidfire-active-iq/task-active-iq-troubleshoot-support.html">
+        トラブルシューティングとサポート
+      </a></li></ul></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <div class="ie-utility">
+  <button id="btn-sidebar-expand" onclick="showSidebar()"><img src="/ja-jp/solidfire-active-iq/images/expand.png" alt="ナビゲーション パネルを展開する"></button>
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/ja-jp/solidfire-active-iq/">SolidFire&nbsp;Active&nbsp;IQ</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/ja-jp/solidfire-active-iq/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 日本語は機械翻訳による参考訳です。内容に矛盾や不一致があった場合には、英語の内容が優先されます。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">アラート</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-08-31 17:31:48 +0000">08/31/2022</time>
+    
+  
+
+<span>寄稿者
+</span>
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>すべてのクラスタビュー*内の* Alerts *ドロップダウンメニューから、アラート履歴の表示、アラートポリシーの作成と管理、クラスタ通知の表示と停止を行うことができます。</p>
+</div>
+<div class="paragraph">
+<p>アラートに関連するタスクの詳細と実行方法：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#View alerts history">[View alerts history]</a></p>
+</li>
+<li>
+<p><a href="#Alerts history details">[Alerts history details]</a></p>
+</li>
+<li>
+<p><a href="#View alert policies">[View alert policies]</a></p>
+</li>
+<li>
+<p><a href="#create_alert_policy">アラートポリシーを作成します</a></p>
+</li>
+<li>
+<p><a href="#alert_policy_types">アラートポリシータイプ</a></p>
+</li>
+<li>
+<p><a href="#Edit an alert policy">[Edit an alert policy]</a></p>
+</li>
+<li>
+<p><a href="#Delete an alert policy">[Delete an alert policy]</a></p>
+</li>
+<li>
+<p><a href="#View suppressed clusters">[View suppressed clusters]</a></p>
+</li>
+<li>
+<p><a href="#Suppress cluster notifications">[Suppress cluster notifications]</a></p>
+</li>
+<li>
+<p><a href="#End cluster suppression from a cluster">[End cluster suppression from a cluster]</a></p>
+</li>
+<li>
+<p><a href="#Alert notification email">[Alert notification email]</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="アラートの履歴を表示します">アラートの履歴を表示します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>未解決または解決済みのアラートの履歴を表示できます。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>［<strong>アラート</strong>］&gt;［<strong>履歴</strong>］を選択します。</p>
+</li>
+<li>
+<p>クラスタのアラートの履歴を表示するには、「* Unresolved <strong>」タブまたは「</strong> resolved *」タブを選択します。</p>
+</li>
+<li>
+<p>（オプション）を選択します <span class="image"><img src="./media/export_button.PNG" alt="&quot;[エクスポート"></span>ボタン"] アイコンをクリックして、データをCSVファイルにエクスポートします。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="アラートの履歴の詳細">アラートの履歴の詳細</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>[All Clusters]ビュー内の[Alerts]ドロップダウン・メニューの[*History]ページには&#8217;過去30日間に解決されたすべての未解決のアラートおよびアラートを含む&#8217;最大10000件のアラート履歴が表示されます</p>
+</div>
+<div class="paragraph">
+<p>表示される詳細情報は次のとおりです。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">見出し</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アラート ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">各アラートの一意のID。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">トリガー済み</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アラートがActive IQ でトリガーされた時刻。クラスタ自体ではトリガーされません。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">最後に通知しました</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">最新のアラートEメールが送信された時刻です。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">解決しました</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アラートの原因 が解決されたかどうかを示します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">解決時間</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">問題 が解決された時刻。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ポリシー</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">これはユーザ定義のアラートポリシー名です。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">重大度</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アラートポリシーが作成された時点で割り当てられていた重大度。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">宛先</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アラートEメールの受信用に選択したEメールアドレス。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">会社</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アラートに関連付けられている顧客の名前。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アラートポリシーが追加されたクラスタの名前が表示されます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">トリガー</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アラートをトリガーしたユーザ定義の設定。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="アラートポリシーを表示します">アラートポリシーを表示します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>すべてのクラスタ・ビュー内の* Alerts <strong>ドロップダウンメニューの</strong> Policies *ページには、すべてのクラスタに関する次のポリシー情報が表示されます。</p>
+</div>
+<div class="paragraph">
+<p>表示される詳細情報は次のとおりです。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">見出し</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ポリシー名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ユーザ定義のアラートポリシー名。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">宛先</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アラートポリシーで定義されたEメールアドレス。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">重大度</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アラートポリシーで割り当てられている重大度。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アラートポリシーに定義されている各クラスタの数と名前。情報アイコンを選択すると、関連付けられているクラスタが表示されます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">条件</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アラートをトリガーするタイミングのユーザ定義の設定。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">抑制タイプ</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>抑制するアラートとイベントを決定します。次のタイプを使用できます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>* Full *：指定した期間は、クラスタに対するすべてのアラートが抑制されます。サポートケースやEメールアラートは生成されません。</p>
+</li>
+<li>
+<p><strong>アップグレード</strong>：重大でないクラスタアラートは、指定した期間は停止されます。重大なアラートでは、引き続きサポートケースやEメールが生成されます。</p>
+</li>
+<li>
+<p><strong>コンピューティング</strong>：コンピューティングノードでVMwareによってトリガーされたアラートは抑制されます。</p>
+</li>
+<li>
+<p>* NodeHardware *：ノードのメンテナンスに関連するアラートは抑制されています。たとえば、ドライブの交換またはノードのオフライン化などです。</p>
+</li>
+<li>
+<p><strong>ドライブ</strong>：ドライブの健常性に関連するアラートを抑制します。</p>
+</li>
+<li>
+<p><strong>ネットワーク</strong>：ネットワーク構成とヘルスに関連するアラートは抑制されます。</p>
+</li>
+<li>
+<p><strong>電源</strong>:電源冗長性アラートは抑制されています。電源が完全に失われた場合に発生する_nodeOffline_alertは抑制されません</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アクション</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">選択したポリシーの編集オプションと削除オプションを表示する縦のドロップダウンメニューを選択します。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="アラートポリシーを作成します">アラートポリシーを作成します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Active IQ のすべてのクラスタビュー*から情報を監視するアラートポリシーを作成できます。アラートポリシーを使用すると、インストール全体で1つ以上のクラスタのステータスやパフォーマンスイベントを通知して、より重大なイベントに事前に対処したり対応したりすることができます。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[<strong>アラート</strong>&gt;*ポリシー*]を選択します。</p>
+</li>
+<li>
+<p>[ * ポリシーの作成 * ] を選択します。</p>
+</li>
+<li>
+<p>[<strong>ポリシータイプ</strong>]リストからアラート・タイプを選択しますを参照してください <a href="#alert_policy_types">アラートポリシータイプ</a>。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/solidfire-active-iq/images/note.svg" alt="注記">
+</td>
+<td class="content">
+選択したポリシータイプに応じて、[ポリシーの作成*]ダイアログボックス内にポリシー固有のフィールドが追加されます。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>新しいアラートポリシーの名前を入力します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/solidfire-active-iq/images/note.svg" alt="注記">
+</td>
+<td class="content">
+アラートポリシー名には、アラートの作成対象となる条件を記述する必要があります。わかりやすいタイトルを付けると、アラートを簡単に特定できます。アラートポリシー名は、システム内の他の場所に参照として表示されます。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>重大度レベルを選択します。</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/solidfire-active-iq/images/tip.svg" alt="ヒント">
+</td>
+<td class="content">
+アラート・ポリシーの重大度レベルは色分けされており'［<strong>アラート</strong>］＞［*履歴］ページ*から簡単にフィルタリングできます
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>アラートポリシーの抑制のタイプを特定するには、*抑制可能タイプ*からタイプを選択します。複数のタイプを選択できます。</p>
+<div class="paragraph">
+<p>関連付けが適切であることを確認します。たとえば、ネットワークアラートポリシーに*Network Suppression *を選択したとします。</p>
+</div>
+</li>
+<li>
+<p>ポリシーに含めるクラスタを1つ以上選択します。</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/solidfire-active-iq/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+ポリシーの作成後に新しいクラスタを環境に追加した場合、そのクラスタは既存のアラートポリシーに自動的には追加されません。既存のアラートポリシーを編集し、ポリシーに関連付ける新しいクラスタを選択する必要があります。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>アラート通知の送信先となるEメールアドレスを1つ以上入力します。複数のアドレスを入力する場合は、各アドレスをカンマで区切る必要があります。</p>
+</li>
+<li>
+<p>［<strong>アラートポリシーの保存</strong>］を選択します。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="アラートポリシータイプ">アラートポリシータイプ</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>[ポリシーの作成*]ダイアログボックスに表示されている使用可能なポリシータイプに基づいて、[アラーム*&gt;*Policies*]からアラートポリシーを作成できます。</p>
+</div>
+<div class="paragraph">
+<p>使用可能なポリシーアラートの種類は次のとおりです。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">ポリシータイプ</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ障害です</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">特定のタイプまたはいずれかのタイプのクラスタ障害が発生したときに通知を送信します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">イベント</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">特定のイベントタイプが発生したときに通知を送信します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">障害ドライブ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ドライブ障害が発生したときに通知を送信します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用可能ドライブ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ドライブが_available_stateになったときに通知を送信します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ利用率</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用中のクラスタの容量とパフォーマンスが指定した割合を超えたときに通知を送信します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用可能スペース</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用可能なクラスタスペースが指定した割合を下回ったときに通知を送信します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">プロビジョニング可能なスペース</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">プロビジョニング可能なクラスタスペースが指定した割合を下回ったときに通知を送信します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">コレクタが報告されて</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">管理ノードで実行されているActive IQ のコレクタが、指定した期間にわたってActive IQ へのデータ送信に失敗したときに通知を送信します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ドライブの摩耗度</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ内のドライブの摩耗度またはリザーブスペースが指定した割合を下回った場合に通知を送信します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">iSCSIセッション</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アクティブなiSCSIセッションの数が指定した値よりも多い場合に通知を送信します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">シャーシの耐障害性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタの使用済みスペースがユーザ指定の割合を超えたときに通知を送信します。クラスタの耐障害性しきい値に達する前に早期通知を行うために十分な割合を選択してください。このしきい値に達すると、クラスタはシャーシレベルの障害から自動的に修復できなくなります。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VMwareアラームです</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VMwareアラームがトリガーされてActive IQ に報告されたときに通知を送信します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">カスタム保護ドメインの耐障害性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用済みスペースがカスタムの保護ドメインの耐障害性しきい値の指定した割合を超えると、システムから通知が送信されます。この割合が100に達すると、カスタムの保護ドメインで障害が発生した場合に自己修復するための十分な空き容量がストレージクラスタにありません。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ノードコア/クラッシュダンプファイル</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">サービスが応答しなくなり再起動が必要になると、コアファイルまたはクラッシュダンプファイルが作成され、通知が送信されます。これは、通常の処理では想定される動作ではありません。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="アラートポリシーを編集する">アラートポリシーを編集する</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>アラートポリシーを編集して、ポリシーに対してクラスタを追加または削除したり、追加のポリシー設定を変更したりできます。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[<strong>アラート</strong>&gt;*ポリシー*]を選択します。</p>
+</li>
+<li>
+<p>[<strong>アクション</strong>（* Actions *）]の下のその他のオプションのメニューを選択します。</p>
+</li>
+<li>
+<p>［<strong>ポリシーの編集</strong>］を選択します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/solidfire-active-iq/images/note.svg" alt="注記">
+</td>
+<td class="content">
+ポリシータイプおよびタイプ固有の監視条件は編集できません。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>（オプション）新しいアラートポリシーの改訂名を入力します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/solidfire-active-iq/images/note.svg" alt="注記">
+</td>
+<td class="content">
+アラートポリシー名には、アラートの作成対象となる条件を記述する必要があります。わかりやすいタイトルを付けると、アラートを簡単に特定できます。アラートポリシー名は、システム内の他の場所に参照として表示されます。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>（任意）別の重大度レベルを選択します。</p>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/solidfire-active-iq/images/tip.svg" alt="ヒント">
+</td>
+<td class="content">
+アラートポリシーの重大度レベルは色分けされており、[Alerts]&gt;[History]ページから簡単にフィルタリングできます。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>アラートポリシーがアクティブな場合の抑制のタイプを判別するには、*抑制可能タイプ*からタイプを選択します。複数のタイプを選択できます。</p>
+<div class="paragraph">
+<p>関連付けが適切であることを確認します。たとえば、ネットワークアラートポリシーに*Network Suppression *を選択したとします。</p>
+</div>
+</li>
+<li>
+<p>（オプション）クラスタとポリシーの関連付けを選択または削除します。</p>
+<div class="admonitionblock caution">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/solidfire-active-iq/images/caution.svg" alt="注意">
+</td>
+<td class="content">
+ポリシーの作成後に新しいクラスタを環境に追加した場合、そのクラスタは既存のアラートポリシーに自動的には追加されません。ポリシーに関連付ける新しいクラスタを選択する必要があります。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>（オプション）アラート通知の送信先となる1つ以上のEメールアドレスを変更します。複数のアドレスを入力する場合は、各アドレスをカンマで区切る必要があります。</p>
+</li>
+<li>
+<p>［<strong>アラートポリシーの保存</strong>］を選択します。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="アラートポリシーを削除する">アラートポリシーを削除する</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>アラートポリシーを削除すると、システムから完全に削除されます。そのポリシーに関するEメール通知は送信されなくなり、ポリシーとクラスタの関連付けが削除されます。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>[<strong>アラート</strong>&gt;*ポリシー*]を選択します。</p>
+</li>
+<li>
+<p>[<strong>アクション</strong>（* Actions *）]で、その他のオプションのメニューを選択します。</p>
+</li>
+<li>
+<p>[<strong>ポリシーの削除</strong>]を選択します。</p>
+</li>
+<li>
+<p>操作を確定します。</p>
+<div class="paragraph">
+<p>ポリシーはシステムから完全に削除されます。</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="抑制されたクラスタを表示します">抑制されたクラスタを表示します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>すべてのクラスタビュー*内の* Alerts <strong>ドロップダウンメニューの</strong> Suppressed Clusters *ページでは、アラート通知が抑制されているクラスタのリストを表示できます。</p>
+</div>
+<div class="paragraph">
+<p>ネットアップサポートまたはお客様は、メンテナンスの際にクラスタのアラート通知を停止できます。アップグレードの抑制を使用してクラスタに対する通知を停止した場合、アップグレード中に発生する一般的なアラートは送信されません。また、指定した期間、クラスタのアラート通知を停止するフルアラート抑制オプションもあります。通知が抑制されたときに送信されない電子メールアラートは、[* Alerts]メニューの[*History]ページで確認できます。定義した期間が経過すると、自動的に通知が停止されます。</p>
+</div>
+<div class="paragraph">
+<p>以下の情報は、* Suppressed Clusters *ページで確認できます。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">見出し</th>
+<th class="tableblock halign-left valign-top">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">会社</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタに割り当てられている会社の名前。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタの作成時に割り当てられたクラスタ番号。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタ名</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタに割り当てられている名前。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">開始時間</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">通知の抑制が開始された正確な時刻。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">終了時刻</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">通知の抑制が終了する予定の正確な時刻</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">を入力します</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>抑制するアラートとイベントを決定します。次のタイプを使用できます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>* Full *：指定した期間は、クラスタに対するすべてのアラートが抑制されます。サポートケースやEメールアラートは生成されません。</p>
+</li>
+<li>
+<p><strong>アップグレード</strong>：重大でないクラスタアラートは、指定した期間は停止されます。重大なアラートでは、引き続きサポートケースやEメールが生成されます。</p>
+</li>
+<li>
+<p><strong>コンピューティング</strong>：コンピューティングノードでVMwareによってトリガーされたアラートは抑制されます。</p>
+</li>
+<li>
+<p>* NodeHardware *：ノードのメンテナンスに関連するアラートは抑制されています。たとえば、ドライブの交換またはノードのオフライン化などです。</p>
+</li>
+<li>
+<p><strong>ドライブ</strong>：ドライブの健常性に関連するアラートを抑制します。</p>
+</li>
+<li>
+<p><strong>ネットワーク</strong>：ネットワーク構成とヘルスに関連するアラートは抑制されます。</p>
+</li>
+<li>
+<p><strong>電源</strong>:電源冗長性アラートは抑制されています。電源が完全に失われた場合に発生する_nodeOffline_alertは抑制されません</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アクション</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">クラスタの通知を停止または再開するオプションを選択します。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="クラスタ通知を停止">クラスタ通知を停止</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>アラート通知は、単一のクラスタまたは複数のクラスタについて、クラスタレベルで停止することができます。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>次のいずれかを実行します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>ダッシュボード*の概要で、抑制するクラスタの操作メニューを選択します。</p>
+</li>
+<li>
+<p>* Alerts <strong>&gt;</strong> Cluster Suppression <strong>から、</strong> Suppress Clusters *を選択します。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>[<strong>Suppress Alerts for Cluster</strong>]ダイアログボックスで、次の操作を行います。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>[* Suppressed Clusters]ページで[* Suppress Clusters]*ボタンを選択した場合は、クラスタを選択します。</p>
+</li>
+<li>
+<p>アラート抑制タイプとして、「* Full <strong>」、「</strong> Upgrades <strong>」、「Compute *」、「</strong> NodeHardware」、「* Drive <strong>」のいずれかを選択します。 *ネットワーク*または*電源</strong>。 <a href="#suppressed_types">抑制タイプについて説明します</a>。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/solidfire-active-iq/images/note.svg" alt="注記">
+</td>
+<td class="content">
+1つのクラスタに複数の抑制タイプを設定できますが、抑制タイプを共有することはできません。たとえば、クラスタには「フル」、「コンピューティング」、「ドライブ」などの抑制を設定できますが、2つの「フル」の抑制を設定することはできません。抑制がすでにクラスタに存在する場合、グレー表示になります。既存の抑制を置き換えるには、*既存を上書き*を選択し、新しい抑制タイプを選択します。
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>共通の期間を選択するか、通知を停止するカスタムの終了日時を入力します。</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>*抑制*を選択します。</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/solidfire-active-iq/images/note.svg" alt="注記">
+</td>
+<td class="content">
+この操作は、ネットアップサポートへの特定またはすべての通知も停止します。クラスタの抑制を有効にすると、ネットアップサポート、またはクラスタを表示する権限を持つすべてのユーザが抑制状態を更新できます。
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="クラスタからのクラスタの抑制を終了します">クラスタからのクラスタの抑制を終了します</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Suppress Clusters機能を使用して適用されたクラスタに対するクラスタアラート抑制を終了できます。これにより、クラスタで通常のアラートレポートの状態を再開できます。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>Dashboard * overviewまたは* Alerts <strong>&gt;</strong> Cluster Suppression *で、標準のアラートレポートを再開する1つまたは複数のクラスタの抑制を終了します。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>単一のクラスタの場合は、クラスタのActionsメニューを選択し、* End Suppression *を選択します。</p>
+</li>
+<li>
+<p>複数のクラスタの場合は、クラスタを選択し、「選択した抑制を終了」を選択します。</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="アラート通知eメール">アラート通知Eメール</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Active IQ アラートのユーザは、システムでトリガーされる各アラートに対して異なるステータスEメールを受信します。アラートに関連付けられるステータスEメールには、次の3種類があります。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 35%;">
+<col style="width: 65%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">新しいアラートEメール</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このタイプのEメールはアラートがトリガーされると送信されます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">リマインダのアラートのEメール</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このタイプのEメールは、アラートがアクティブなままであるかぎり24時間ごとに送信されます。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">アラート解決電子メール</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">このタイプのEメールは、問題 が解決されると送信されます。</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>アラートポリシーが作成され、このポリシーの新しいアラートが生成されると、指定したEメールアドレスにEメールが送信されます（を参照） <a href="#create_alert_policy">アラートポリシーを作成します</a>）。</p>
+</div>
+<div class="paragraph">
+<p>アラートEメールの件名には、報告されたエラーの種類に応じて次のいずれかの形式が使用されます。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>未解決のクラスタ障害:[cluster fault code][cluster name]([severity])`の障害</p>
+</li>
+<li>
+<p>クラスタ障害を解決しました：'Resolved：[cluster fault code][cluster name]([severity])`の障害</p>
+</li>
+<li>
+<p>未解決のアラート:[policy name] alerton [cluster name]([severity])`</p>
+</li>
+<li>
+<p>解決済みのアラート障害：'Resolved：[policy name] alert on [cluster name]（[severity])`</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>通知Eメールの内容は次の例のようになります。<span class="image"><img src="./media/example_email.PNG" alt="Eメールの例"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="詳細についてはこちらをご覧ください">詳細については、こちらをご覧ください</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.netapp.com/support-and-training/documentation/" target="_blank" rel="noopener">"ネットアップの製品マニュアル"</a></p>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">利用条件</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">プライバシー ポリシー</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">クッキー ポリシー</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">クッキーの設定</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">Web サイトについてのフィードバックを</span>
+              <a target="_self" href="javascript:netapp_mailto()">お寄せください</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/ja-jp/announcements/">お知らせ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ja-jp/solidfire-active-iq/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ja-jp/solidfire-active-iq/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ja-jp/solidfire-active-iq/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ja-jp/solidfire-active-iq/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ja-jp/solidfire-active-iq/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ja-jp/solidfire-active-iq/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/ja-jp/solidfire-active-iq/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ja-jp/solidfire-active-iq/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ja-jp/solidfire-active-iq/js/prism.js'></script>
+      <script type="text/javascript" src='/ja-jp/solidfire-active-iq/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ja-jp/solidfire-active-iq/js/www-ntap.js'></script>
+    <script src='/ja-jp/solidfire-active-iq/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/solidfire-active-iq/js/sidebar.js'></script>
+  </body></html>
