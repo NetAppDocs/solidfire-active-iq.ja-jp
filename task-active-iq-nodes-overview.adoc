@@ -1,0 +1,26 @@
+---
+permalink: task-active-iq-nodes-overview.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, nodes, throttling, 
+summary: SolidFire Active IQ のNodesページについて説明します。 
+---
+= ノード
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+選択したクラスタのサイドパネルから使用可能なノードページでは、クラスタ内のノードに関する情報を表示できます。
+
+選択したノードについて、アクティブノードの情報とスロットリングの割合を表示する方法を確認します。
+
+* link:task-active-iq-active-nodes.html["アクティブノード"]
+* link:task-active-iq-node-throttling.html["ノードスロットル"]
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]

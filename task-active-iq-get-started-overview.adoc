@@ -1,0 +1,25 @@
+---
+permalink: task-active-iq-get-started-overview.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, started 
+summary: SolidFire Active IQ の使用を開始する方法について説明します。 
+---
+= SolidFire Active IQ の利用を開始しましょう
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SolidFire Active IQ ツールを使用すると、容量とパフォーマンスの監視に加え、クラスタの健常性に関する情報をどこからでも簡単に入手して確認できます。SolidFire Active IQ の使用方法にかかわらず、使用を開始する前に知っておくべき事項がいくつかあります。
+
+* link:concept-active-iq-learn-about-active-iq.html["SolidFire Active IQ の詳細をご覧ください"]：SolidFire Active IQ の仕組みと、収集される情報について理解しておく必要があります。
+* link:task-active-iq-enable-reporting.html["SolidFire Active IQ レポートを有効にします"]：Active IQ サーバをクラスタに接続してクラスタ情報を受信するには、管理ノードでActive IQ レポート機能を有効にする必要があります。
+* link:task-active-iq-use-the-user-interface.html["SolidFire Active IQ UIを使用"]：フィルタ、ソート、データのエクスポート、クラスタ選択などの新機能または拡張された機能について説明します。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]

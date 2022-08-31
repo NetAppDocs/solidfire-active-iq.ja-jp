@@ -1,0 +1,26 @@
+---
+permalink: task_active_iq_volumes_overview.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, volumes, cluster 
+summary: SolidFire Active IQ のVolumes（ボリューム）ページについて説明します。 
+---
+= 個のボリューム
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+選択したクラスタのサイドパネルからアクセス可能な* Volumes *ページでは、クラスタでプロビジョニングされているボリュームに関する情報を表示できます。ボリューム情報のカテゴリごとに、表形式またはグラフ形式で表示されます。
+
+表示される内容については、* Volumes *ページを参照してください。
+
+* link:task-active-iq-active-volumes.html["アクティブなボリューム"]
+* link:task-active-iq-snapshots-and-schedules.html["SnapshotとSnapshotスケジュール"]
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]

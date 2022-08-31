@@ -1,0 +1,60 @@
+---
+permalink: task-active-iq-all-clusters-view-dashboard.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, dashboard, all, clusters, view 
+summary: SolidFire Active IQ のAll Clusters Viewダッシュボードの詳細については、次のページを参照してください。 
+---
+= All Clusters Viewダッシュボード
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+すべてのクラスタビュー*の*ダッシュボード*ページでは、アカウントに関連付けられているクラスタに関するパフォーマンス、容量、およびクラスタ統計の詳細を表示できます。
+
+[cols="25,75"]
+|===
+| 見出し | 説明 
+
+
+| 会社 | クラスタに割り当てられている会社の名前。 
+
+
+| クラスタ | クラスタに割り当てられている名前。 
+
+
+| クラスタID | クラスタの作成時に割り当てられたクラスタ番号。 
+
+
+| バージョン | 各ノードで実行されているクラスタマスターのバージョン。 
+
+
+| ノード | クラスタ内のノードの数。 
+
+
+| 個のボリューム | クラスタ内のボリュームの数。 
+
+
+| 効率性 | 圧縮、重複排除、シンプロビジョニングなどにより、システムで認識される効率性です。 
+
+
+| 使用済みブロック容量 | クラスタブロックの現在の使用済み容量。 
+
+
+| 障害 | クラスタで検出された現在未解決の障害の数。 
+
+
+| SVIP | クラスタに割り当てられたストレージ仮想IPアドレス。 
+
+
+| MVIPの数 | クラスタに割り当てられた管理仮想IPアドレス。 
+
+
+| 前回の更新 | クラスタの最新の更新日時。 
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]

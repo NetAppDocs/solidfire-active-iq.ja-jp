@@ -1,0 +1,63 @@
+---
+permalink: task-active-iq-node-throttling.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, nodes, throttling 
+summary: SolidFire Active IQ のNode Throttlingページについて説明します。 
+---
+= ノードスロットル
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+選択したクラスタのサイドパネルから使用可能な* Nodes *>* Node Throttlling *ページで、クラスタ内のノードの調整割合を表示できます。ノードは、ディスプレイの左側にサムネイルレイアウトとして表示され、選択した時間範囲のスロットリングの程度に応じて順序が決まります。
+
+ノードのスロットル情報の表示について学習します。
+
+* <<View graphs and select date ranges>>
+* <<Export node throttling data>>
+
+
+
+
+== グラフを表示して日付範囲を選択します
+
+Active IQ のグラフと日付範囲はシームレスに統合されます。日付範囲を選択すると、そのページ上のすべてのグラフが選択した範囲に調整されます。各グラフには、デフォルトの日付範囲は7日間表示されます。
+
+カレンダーのドロップダウンボックスまたは事前定義された範囲のセットから日付範囲を選択できます。日付範囲は、現在のブラウザ時間（選択した時間）と設定した時間を使用して計算されます。また、下部の棒グラフの上に直接ブラシをかけることで、目的の間隔を選択することもできます。左側のサムネイルレイアウトを選択すると、グラフを切り替えることができます。
+
+グラフには、選択したノードでホストされているボリュームの最小IOPSと最大IOPSの設定に基づいて、ノードの調整率が表示されます。
+
+* 緑=最大39%
+* 黄色= 40～59%
+* 赤= 59%を超えています
+
+
+link:task-active-iq-qos-recommendations.html["クラスタでのQoSに関する推奨事項について説明します"]。
+
+
+NOTE: Node Throttlingページで、ストレージクラスタにQoSプッシュバックがあるかどうかを確認できます。この方法については、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/How_to_check_for_QoS_pushback_in_Element_Software["こちらの技術情報アーティクル"^] を参照してください。
+
+グラフの任意のポイントにマウスポインタを合わせると、ポイントインタイムの詳細が表示されます。
+
+.グラフの例を展開します
+====
+image:node_throttling_range.PNG["ノードのスロットルグラフ"]
+
+====
+
+
+== ノードスロットルデータをエクスポートします
+
+グラフのデータをカンマ区切り値（CSV）形式でエクスポートできます。グラフに表示された情報のみがエクスポートされます。
+
+.手順
+. リストビューまたはグラフで、を選択します image:export_button.PNG["[エクスポート]ボタン"] をクリックします。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]

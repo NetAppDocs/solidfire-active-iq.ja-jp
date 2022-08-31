@@ -1,0 +1,21 @@
+---
+permalink: task-active-iq-troubleshoot-support.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, troubleshoot, support 
+summary: SolidFire Active IQ の問題のトラブルシューティングを行う。 
+---
+= トラブルシューティングとサポート
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SolidFire Active IQ またはその他のNetApp Element ソフトウェアベース製品を使用しているときに問題が発生したり、技術的な問題が発生したりした場合は、多くのリソースを利用して問題を解決することができます。
+
+* を検索します https://kb.netapp.com/["ナレッジベース"^] を参照してください。
+* 検索 https://www.netapp.com/support-and-training/documentation/["NetApp のドキュメント"^] ネットアップのSolidFire とNetApp HCI に関する回答を参照できます。
+* オンラインでお気軽にお問い合わせください。 https://mysupport.netapp.com/site/["mysupport.netapp.com"^]。質問はいつでも送信できます。サポートがオフラインの場合、サポートチームは1営業日以内に対応します。
+* サポートチームに888.4.NETAPP（888.463.8277）までお問い合わせください。
+* link:task-active-iq-use-the-user-interface.html#provide-feedback["フィードバックを提供する"]。
+

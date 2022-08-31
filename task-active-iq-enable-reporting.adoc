@@ -1,0 +1,113 @@
+---
+permalink: task-active-iq-enable-reporting.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, enable, reporting 
+summary: 管理ノードでのSolidFire Active IQ レポート機能の有効化について説明します。 
+---
+= SolidFire Active IQ レポートを有効にします
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+インストールまたはアップグレード時にSolidFire Active IQ レポート機能を有効にしていない場合は、管理ノードからクラスタのデータペイロードをActive IQ サーバが受信できるようにする前に、管理ノードでレポート機能を有効にする必要があります。接続のセットアップが完了すると、クラスタからActive IQ サーバに情報が送信されます。その後、クラスタをActive IQ UIに表示してクラスタ情報を確認できます。
+
+
+NOTE: Active IQ では、Google ChromeブラウザとFirefoxブラウザがサポートされます。
+
+.作業を開始する前に
+* Quality of Service（QoS；サービス品質）などのActive IQ の一部の機能を正しく機能させるには、Element 11.3以降が必要です。Active IQ のすべての機能を使用できることを確認するために、次のことを推奨します。
++
+** ストレージクラスタで NetApp Element ソフトウェア 11.3 以降が実行されている必要があります。
+** バージョン 11.3 以降を実行する管理ノードを導入しておきます。
+
+
+* インターネットにアクセスできる。外部接続のないダークサイトからは、Active IQ コレクタサービスを使用できません。
+
+
+.手順
+. インストールのベースアセット ID を取得します。
++
+.. 管理ノードでインベントリサービス REST API UI を開きます。
++
+[listing]
+----
+https://<ManagementNodeIP>/inventory/1/
+----
+.. 「 * Authorize * 」（認証）を選択して、次の手順を実行
++
+... クラスタのユーザ名とパスワードを入力します。
+... クライアント ID を「 m node-client 」として入力します。
+... セッションを開始するには、 * Authorize * を選択します。
+... ウィンドウを閉じます。
+
+
+.. REST API UI で、 * 一部のユーザに一時的な処理を開始 / インストール * を選択します。
+.. [* 試してみてください * ] を選択します。
+.. [* Execute] を選択します。
+.. コード 200 の応答本文から ' インストールの ID をコピーします
++
+[listing, subs="+quotes"]
+----
+{
+  "installations": [
+    {
+      "_links": {
+        "collection": "https://10.111.211.111/inventory/1/installations",
+        "self": "https://10.111.217.111/inventory/1/installations/abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x"
+      },
+      *"id": "abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x",*
+----
++
+
+NOTE: インストール環境には、インストールまたはアップグレード時に作成されたベースアセットの構成が含まれています。
+
+
+
+. テレメータの有効化：
++
+.. 管理ノードの mNode サービス API UI にアクセスします。管理ノードの IP アドレスに「 /mnode 」を続けて入力します。
++
+[listing]
+----
+https://<ManagementNodeIP>/mnode
+----
+.. 「 * Authorize * （認証）」または任意のロックアイコンを選択し、次の手順を実行します。
++
+... クラスタのユーザ名とパスワードを入力します。
+... クライアント ID を「 m node-client 」として入力します。
+... セッションを開始するには、 * Authorize * を選択します。
+... ウィンドウを閉じます。
+
+
+.. ベースアセットを設定します。
++
+... PUT /assets/｛ asset_id ｝ * を選択します。
+... [* 試してみてください * ] を選択します。
+... JSON ペイロードに次のコマンドを入力します。
++
+[listing]
+----
+{
+"telemetry_active": true
+"config": {}
+}
+----
+... 前の手順のベース ID を * asset_ID * に入力します。
+... [* Execute] を選択します。
++
+Active IQ サービスは、アセットが変更されるたびに自動的に再起動されます。アセットを変更すると、設定が適用されるまで短時間の遅延が発生します。
+
+
+
+
+
+. にログインします link:https://activeiq.solidfire.com/["SolidFire Active IQ の略"^] クラスタを表示できることを確認します。
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]

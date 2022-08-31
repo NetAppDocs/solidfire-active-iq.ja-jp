@@ -1,0 +1,118 @@
+---
+permalink: task-active-iq-snapshots-and-schedules.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, snapshot, details, schedule 
+summary: SolidFire Active IQ でSnapshotの詳細とSnapshotスケジュールの詳細を確認する方法について説明します。 
+---
+= SnapshotとSnapshotスケジュール
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapshotとSnapshotのスケジュールに関する情報を確認する方法を次に示します。
+
+* <<Snapshots>>
+* <<Snapshot Schedules>>
+
+
+
+
+== Snapshot
+
+選択したクラスタのサイドパネルにある* Volumes *ページでは、ボリュームSnapshotに関する情報を表示できます。
+
+.手順
+. * Volumes *>* Snapshots *を選択します。
+. または、* Volumes *>* Active Volumes *を選択し、Actionsカラムでを選択します image:more_information.PNG["詳細情報"] 目的のボリュームのアイコンをクリックし、*スナップショットの表示*を選択します。
+. （オプション）を選択して、SnapshotリストをCSVファイルとしてエクスポートできます image:export_button.PNG["[エクスポート]ボタン"] をクリックします。
+
+
+詳細については、次の表を参照してください。
+
+[cols="25,75"]
+|===
+| 見出し | 説明 
+
+
+| ID | Snapshotに割り当てられているSnapshot IDが表示されます。 
+
+
+| ボリューム ID | ボリュームの作成時に指定したID。 
+
+
+| アカウント ID | ボリュームに割り当てられているアカウントのID。 
+
+
+| UUID | Universally Unique Identifierの略。 
+
+
+| サイズ | ユーザが定義したSnapshotのサイズ。 
+
+
+| ボリュームサイズ | Snapshotの作成元のボリュームのサイズ。 
+
+
+| 作成時刻（Create Time） | Snapshotの作成日時。 
+
+
+| まで保持します | Snapshot が削除される日時。 
+
+
+| グループSnapshot ID | Snapshotが他のボリュームSnapshotと一緒にグループ化されている場合に、Snapshotが属するグループID。 
+
+
+| レプリケート  a| 
+リモートクラスタ上のSnapshotのステータスを表示します。
+
+* Present ：リモートクラスタに Snapshot が存在します。
+* Not Present：リモートクラスタにSnapshotが存在しません。
+* Syncing：ターゲットクラスタがSnapshotをレプリケート中です。
+* Deleted：ターゲットがSnapshotをレプリケートしたあとで削除しました。
+
+
+|===
+
+
+== Snapshotスケジュール
+
+選択したクラスタのサイドパネルにある* Volumes *>* Snapshot Schedules *ページで、Snapshotスケジュールの詳細を表示できます。
+
+を選択して、SnapshotスケジュールのリストをCSVファイルとしてエクスポートできます image:export_button.PNG["[エクスポート]ボタン"] をクリックします。
+
+詳細については、次の表を参照してください。
+
+[cols="25,75"]
+|===
+| 見出し | 説明 
+
+
+| ID | スケジュールに割り当てられたスケジュールID。 
+
+
+| 名前 | ユーザが割り当てたスケジュールの名前。 
+
+
+| 頻度 | スケジュールを実行する頻度。頻度は時間と分、週、または月で設定できます。 
+
+
+| 繰り返し | スケジュールを繰り返すかどうか。 
+
+
+| ボリュームID | スケジュールされたSnapshotに含まれているボリュームID。 
+
+
+| 前回の実行 | 最後にスケジュールが実行された日時。 
+
+
+| 前回の実行ステータス | スケジュールの前回の実行結果。有効な値は「Success」または「Error」です 
+
+
+| 手動による一時停止 | スケジュールが手動で一時停止されているかどうかを示します。 
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]

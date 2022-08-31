@@ -1,0 +1,28 @@
+---
+permalink: task-active-iq-all-clusters-view-overview.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, all, clusters, view 
+summary: SolidFire Active IQ のAll Clusters Viewページの詳細については、次のページを参照してください。 
+---
+= すべてのクラスタビュー
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+すべてのクラスタビュー*は、SolidFire Active IQ のランディングページです。
+
+すべてのクラスタビュー*からアクセスできる機能については、以下を参照してください。
+
+* link:task-active-iq-all-clusters-view-dashboard.html["All Clusters Viewダッシュボード"]
+* link:task-active-iq-alerts.html["アラート"]
+* link:task-active-iq-capacity-licensing.html["容量ベースのライセンス"]
+* link:task-active-iq-term-capacity.html["期間容量"]
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]

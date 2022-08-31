@@ -1,0 +1,100 @@
+---
+settings:
+  name: SolidFire Active IQ
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: ja-jp,us-en,zh-cn,zh-tw,ko-kr
+sidebar:
+  entries:
+  - title: NetApp SolidFire Active IQ の略
+    url: "/index.html"
+    entries:
+    - title: SolidFire Active IQ の利用を開始しましょう
+      entries:
+      - title: 概要
+        url: "/task-active-iq-get-started-overview.html"
+      - title: SolidFire Active IQ の詳細をご覧ください
+        url: "/concept-active-iq-learn-about-active-iq.html"
+      - title: SolidFire Active IQ レポートを有効にします
+        url: "/task-active-iq-enable-reporting.html"
+      - title: Active IQ UIを使用
+        url: "/task-active-iq-use-the-user-interface.html"
+    - title: SolidFire Active IQ を管理します
+      entries:
+      - title: 概要
+        url: "/task-active-iq-manage-overview.html"
+      - title: すべてのクラスタビュー
+        entries:
+        - title: 概要
+          url: "/task-active-iq-all-clusters-view-overview.html"
+        - title: すべてのクラスタビューダッシュボード
+          url: "/task-active-iq-all-clusters-view-dashboard.html"
+        - title: アラート
+          url: "/task-active-iq-alerts.html"
+        - title: 容量ベースのライセンス
+          url: "/task-active-iq-capacity-licensing.html"
+        - title: 期間容量
+          url: "/task-active-iq-term-capacity.html"
+      - title: クラスタを選択します
+        entries:
+        - title: 概要
+          url: "/task-active-iq-select-cluster-overview.html"
+        - title: 単一のクラスタビューダッシュボード
+          url: "/task-active-iq-single-cluster-view-dashboard.html"
+        - title: レポート作成
+          url: "/task-active-iq-reporting-options.html"
+      - title: ノード
+        entries:
+        - title: 概要
+          url: "/task-active-iq-nodes-overview.html"
+        - title: アクティブノード
+          url: "/task-active-iq-active-nodes.html"
+        - title: ノードスロットル
+          url: "/task-active-iq-node-throttling.html"
+      - title: ドライブ
+        url: "/task_active_iq_drives.html"
+      - title: 個のボリューム
+        entries:
+        - title: 概要
+          url: "/task_active_iq_volumes_overview.html"
+        - title: アクティブなボリューム
+          url: "/task-active-iq-active-volumes.html"
+        - title: SnapshotとSnapshotスケジュール
+          url: "/task-active-iq-snapshots-and-schedules.html"
+      - title: レプリケーション
+        url: "/task_active_iq_replication.html"
+      - title: 仮想ボリューム
+        url: "/task-active-iq-virtual-volumes.html"
+      - title: QoSに関する推奨事項
+        url: "/task-active-iq-qos-recommendations.html"
+      - title: 仮想マシン
+        url: "/task-active-iq-virtual-machines.html"
+      - title: VMwareアラーム
+        url: "/task-active-iq-vmware-alarms.html"
+    - title: トラブルシューティングとサポート
+      url: "/task-active-iq-troubleshoot-support.html"
+homepage:
+  tiles:
+  - title: SolidFire Active IQ ツールを使用します
+    links:
+    - title: はじめに
+      url: "/task-active-iq-get-started-overview.html"
+    - title: SolidFire Active IQ を管理します
+      url: "/task-active-iq-manage-overview.html"
+  - title: 製品ドキュメント
+    links:
+    - title: SolidFire とElementソフトウェア
+      url: https://docs.netapp.com/us-en/element-software/index.html
+    - title: NetApp HCI
+      url: https://docs.netapp.com/us-en/hci/index.html
+    - title: ネットアップの製品マニュアル
+      url: https://www.netapp.com/support-and-training/documentation
+  - title: トラブルシューティングを行う
+    links:
+    - title: トラブルシューティングを行う
+      url: "/task-active-iq-troubleshoot-support.html"
+    - title: テクニカルサポートにお問い合わせください
+      url: https://mysupport.netapp.com/site/global/dashboard

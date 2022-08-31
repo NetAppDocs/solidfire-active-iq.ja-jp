@@ -1,0 +1,26 @@
+---
+permalink: task-active-iq-select-cluster-overview.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, cluster, information, specific 
+summary: SolidFire Active IQ でのクラスタ情報の表示について説明します。 
+---
+= クラスタを選択します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+Select a Cluster *ドロップダウンリストからクラスタを選択すると、特定のクラスタのクラスタ情報を表示できます。クラスタ情報のカテゴリごとに、表形式またはグラフ形式で表示されます。
+
+ダッシュボード*クラスタの概要またはサイド・パネルの*レポート*ドロップダウンメニューで使用できる各種リストとフィルタについて説明します。
+
+* link:task-active-iq-single-cluster-view-dashboard.html["単一のクラスタビューダッシュボード"]
+* link:task-active-iq-reporting-options.html["クラスタのレポートオプション"]
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]

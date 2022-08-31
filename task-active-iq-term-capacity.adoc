@@ -1,0 +1,42 @@
+---
+permalink: task-active-iq-term-capacity.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, capacity, licensing 
+summary: SolidFire Active IQ の容量ライセンスページについて説明します。 
+---
+= 期間容量
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+すべてのクラスタビュー*の「期間容量*」ページで、ネットアップの用語容量モデルに関する情報を表示できます。
+
+[cols="25,75"]
+|===
+| 見出し | 説明 
+
+
+| 会社ID | ライセンスに関連付けられた会社ID。 
+
+
+| 会社名 | ライセンスに関連付けられている会社の名前。 
+
+
+| ライセンス | お客様の環境で使用するライセンスの数。 
+
+
+| クラスタ | お客様に属するクラスタとそのIDの数。 
+
+
+| ライセンス容量 | お客様の環境でライセンスが付与されているノード上の割り当て済み容量。 
+
+
+| 使用済み容量 | お客様に属するすべてのクラスタの現在の消費容量。 
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]

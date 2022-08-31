@@ -1,0 +1,41 @@
+---
+permalink: task-active-iq-capacity-licensing.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, capacity, licensing 
+summary: SolidFire Active IQ の容量ライセンスページについて説明します。 
+---
+= 容量ベースのライセンス
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+すべてのクラスタビュー*の*容量ライセンス*ページで、NetApp Capacity Licensingモデルに関する情報を確認できます。標準のSolidFire アプライアンスを使用しているお客様は、このページを無視してください。
+
+容量ライセンスは、ネットアップが提供しているオプションの1つです。容量ライセンスに関連するタスクを確認し、実行することができます。
+
+[cols="25,75"]
+|===
+| 見出し | 説明 
+
+
+| プール名 | ライセンスに関連付けられている顧客の名前。 
+
+
+| 使用権のある容量 | 購入済みのソフトウェア容量ライセンスの合計。 
+
+
+| プロビジョニング済み容量 | お客様の環境内のすべての容量ライセンス済みノードの割り当て済みプロビジョニング済み容量。 
+
+
+| 使用済み容量 | クラスタプール内のすべてのクラスタの現在の使用済み容量。 
+
+
+| クラスタ | ライセンスのクラスタプールを構成するクラスタの数とID。 
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]

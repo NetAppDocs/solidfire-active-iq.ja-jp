@@ -1,0 +1,52 @@
+---
+permalink: concept-active-iq-learn-about-active-iq.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, learn 
+summary: SolidFire Active IQ の詳細をご覧ください。 
+---
+= SolidFire Active IQ の詳細をご覧ください
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+SolidFire Active IQ の使用を開始する前に、SolidFire Active IQ の仕組みと、このツールで収集される情報について理解しておく必要があります。
+
+
+
+== SolidFire Active IQ の仕組み
+
+コレクタやテレメトリなどのサービスは管理ノードで実行されます。これらのサービスには、クラスタへの読み取り専用アクセスが設定され、主要なパフォーマンス、容量、および健全性の指標を収集するために、クラスタに対して定期的にAPI呼び出しが実行されます。この情報はHTTPSを使用してActive IQ クラウドデータベースにアップロードされ、Active IQ UIからユーザとネットアップサポートに提供されます。Active IQ UIでクラスタに対して受信した最新のAPIペイロードと収集間隔を表示するには、SSOクレデンシャルを使用してログインし、* Reporting *ドロップダウンメニューから* API Collection *を選択します。
+
+link:https://activeiq.solidfire.com/["Access SolidFire Active IQ （ログインが必要）"^]
+
+
+
+== SolidFire Active IQ で収集される情報
+
+SolidFire Active IQ は、ボリューム、クラスタ、ノード、パフォーマンス、構成に関する情報を収集します。
+
+* ボリューム、Snapshot、アカウントノードIDなどのリソースID
+* クラスタおよびボリュームのパフォーマンスデータと容量データ
+* エラーとイベントの履歴
+* NetApp HCI とElementソフトウェアのバージョン
+* サービス品質（QoS）設定
+* ボリュームのサイズ、作成日などの詳細
+* ボリュームアクセスグループとセッションの設定
+* ノードとクラスタのネットワーク構成
+
+
+SolidFire Active IQ では、次の顧客の機密情報は収集されません。
+
+* 実際のエンドユーザデータ
+* パスワード
+* Challenge-Handshake Authentication Protocol（CHAP；チャレンジハンドシェイク認証プロトコル）のシークレット
+* クラスタ管理ユーザの情報
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]

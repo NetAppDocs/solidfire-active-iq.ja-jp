@@ -1,0 +1,32 @@
+---
+permalink: task-active-iq-manage-overview.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq 
+summary: SolidFire Active IQ のページについて説明します。 
+---
+= SolidFire Active IQ を管理します
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+の使用方法について説明します link:https://activeiq.solidfire.com/["SolidFire Active IQ （ログインが必要）"^] クラスタの容量とパフォーマンスを監視するには、次のコマンドを
+
+* link:task-active-iq-all-clusters-view-overview.html["すべてのクラスタビュー"]
+* link:task-active-iq-select-cluster-overview.html["クラスタを選択します"]
+* link:task-active-iq-nodes-overview.html["ノード"]
+* link:task_active_iq_drives.html["ドライブ"]
+* link:task_active_iq_volumes_overview.html["個のボリューム"]
+* link:task_active_iq_replication.html["レプリケーション"]
+* link:task-active-iq-virtual-volumes.html["仮想ボリューム"]
+* link:task-active-iq-qos-recommendations.html["QoSに関する推奨事項"]
+* link:task-active-iq-virtual-machines.html["仮想マシン（NetApp HCI クラスタのみ）"]
+* link:task-active-iq-vmware-alarms.html["VMwareアラーム（NetApp HCI クラスタのみ）"]
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]

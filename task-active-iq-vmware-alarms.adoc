@@ -1,0 +1,47 @@
+---
+permalink: task-active-iq-vmware-alarms.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, all, vmware, alarm, hci 
+summary: 'SolidFire Active IQ の[VMware Alarms]ページについて説明します。' 
+---
+= VMwareアラーム
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+選択したNetApp HCI クラスタのサイドパネルからVMwareアラーム*ページを表示して、クラスタに関するVMwareアラーム関連情報を確認できます。
+
+
+NOTE: VMware Alarms *ページは、NetApp HCI クラスタでのみ使用できます。
+
+UIに表示されるVMwareアラームデータについて説明します。
+
+[cols="30,70"]
+|===
+| 見出し | 説明 
+
+
+| vCenterのIP | vCenter ServerのIPアドレス。 
+
+
+| エンティティID | アラームの発生元であるvSphere内のオブジェクトのID。 
+
+
+| ステータス | VMwareアラームの重大度。 
+
+
+| アラーム名 | VMwareアラームの名前。 
+
+
+| 説明 | 概要 of the VMwareアラーム。 
+
+
+| トリガー日時 | アラートがActive IQ でトリガーされた時刻。クラスタ自体ではトリガーされません。 
+|===
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]
