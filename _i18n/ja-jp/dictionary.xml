@@ -84,7 +84,6 @@
   <block id="f3bf056f68b8355023f77881422e7f1f" category="section-title">グラフを表示して日付範囲を選択します</block>
   <block id="b7b7b61b3c4499c5f2b5308b977a1f92" category="paragraph">Active IQ のグラフと日付範囲はシームレスに統合されます。日付範囲を選択すると、そのページ上のすべてのグラフが選択した範囲に調整されます。各グラフには、デフォルトの日付範囲は7日間表示されます。</block>
   <block id="3cb48fc4c57bd3575e0c430007bfe074" category="paragraph">カレンダーのドロップダウンボックスまたは事前定義された範囲のセットから日付範囲を選択できます。日付範囲は、現在のブラウザ時間（選択した時間）と設定した時間を使用して計算されます。また、下部の棒グラフの上に直接ブラシをかけることで、目的の間隔を選択することもできます。左側のサムネイルレイアウトを選択すると、グラフを切り替えることができます。</block>
-  <block id="0461c4fc34e0832d93b7333b2c5410c3" category="paragraph">グラフには、選択したノードでホストされているボリュームの最小IOPSと最大IOPSの設定に基づいて、ノードの調整率が表示されます。</block>
   <block id="71f0bed4fc7583649837eed2b8ee49c4" category="list-text">緑=最大39%</block>
   <block id="a4965bbdc77616cfb8e9619447a55ffc" category="list-text">黄色= 40～59%</block>
   <block id="77b4dabdac23af0111f4e3fffcb2f6e5" category="list-text">赤= 59%を超えています</block>
@@ -842,7 +841,6 @@
   <block id="56ee8203bf76c58f39596dab101d98d5" category="list-text">Quality of Service（QoS；サービス品質）などのActive IQ の一部の機能を正しく機能させるには、Element 11.3以降が必要です。Active IQ のすべての機能を使用できることを確認するために、次のことを推奨します。</block>
   <block id="7ae82c07422143d84f2406fe018d3f73" category="list-text">ストレージクラスタで NetApp Element ソフトウェア 11.3 以降が実行されている必要があります。</block>
   <block id="d95dde96d5f37c05bba91d1bff6d1a55" category="list-text">バージョン 11.3 以降を実行する管理ノードを導入しておきます。</block>
-  <block id="48999150d3601e85bd7d225657eb6811" category="list-text">インターネットにアクセスできる。外部接続のないダークサイトからは、Active IQ コレクタサービスを使用できません。</block>
   <block id="82a2b40d5c47d3f7c952492cdb40edd6" category="list-text">インストールのベースアセット ID を取得します。</block>
   <block id="2be2a7ca72e09c58cfb47c549453cdd1" category="list-text">管理ノードでインベントリサービス REST API UI を開きます。</block>
   <block id="03917624197381e26d93d8783477b3bf" category="list-text">「 * Authorize * 」（認証）を選択して、次の手順を実行</block>
@@ -1027,4 +1025,6 @@
   <block id="08edd2123939d5309dced149763a50ee" category="sidebar">NetApp HCI</block>
   <block id="d60c463bb4096f3ed4bd1618626dfe10" category="sidebar">トラブルシューティングを行う</block>
   <block id="0607bd332350ef193bc31ef1c742c508" category="sidebar">テクニカルサポートにお問い合わせください</block>
+  <block id="1b4febc902d7bf51135668545d151a14" category="paragraph">このグラフには、選択したノードでホストされているボリュームの最小IOPSと最大IOPSの設定に基づいて、ノードの調整率が表示されます。</block>
+  <block id="b28e179f94097b207a2dc9172aa4b4d0" category="list-text">インターネットにアクセスできる。外部接続のないダークサイトからは、 Active IQ コレクタサービスを使用できません。</block>
 </blocks>
