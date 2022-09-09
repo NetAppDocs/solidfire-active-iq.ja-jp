@@ -30,7 +30,7 @@ sidebar:
         entries:
         - title: 概要
           url: "/task-active-iq-all-clusters-view-overview.html"
-        - title: すべてのクラスタビューダッシュボード
+        - title: All Clusters Viewダッシュボード
           url: "/task-active-iq-all-clusters-view-dashboard.html"
         - title: アラート
           url: "/task-active-iq-alerts.html"
@@ -38,7 +38,7 @@ sidebar:
           url: "/task-active-iq-capacity-licensing.html"
         - title: 期間容量
           url: "/task-active-iq-term-capacity.html"
-      - title: クラスタを選択します
+      - title: クラスタを選択
         entries:
         - title: 概要
           url: "/task-active-iq-select-cluster-overview.html"
@@ -47,13 +47,7 @@ sidebar:
         - title: レポート作成
           url: "/task-active-iq-reporting-options.html"
       - title: ノード
-        entries:
-        - title: 概要
-          url: "/task-active-iq-nodes-overview.html"
-        - title: アクティブノード
-          url: "/task-active-iq-active-nodes.html"
-        - title: ノードスロットル
-          url: "/task-active-iq-node-throttling.html"
+        url: "/task-active-iq-nodes.html"
       - title: ドライブ
         url: "/task_active_iq_drives.html"
       - title: 個のボリューム
@@ -68,8 +62,14 @@ sidebar:
         url: "/task_active_iq_replication.html"
       - title: 仮想ボリューム
         url: "/task-active-iq-virtual-volumes.html"
-      - title: QoSに関する推奨事項
-        url: "/task-active-iq-qos-recommendations.html"
+      - title: QoS管理
+        entries:
+        - title: 概要
+          url: "/task-active-iq-qos-management-overview.html"
+        - title: 推奨事項
+          url: "/task-active-iq-recommendations.html"
+        - title: ノードスロットル
+          url: "/task-active-iq-throttling.html"
       - title: 仮想マシン
         url: "/task-active-iq-virtual-machines.html"
       - title: VMwareアラーム

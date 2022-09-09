@@ -1,5 +1,5 @@
 ---
-permalink: task-active-iq-node-throttling.html 
+permalink: task-active-iq-throttling.html 
 sidebar: sidebar 
 keywords: solidfire, active, iq, nodes, throttling 
 summary: SolidFire Active IQ のNode Throttlingページについて説明します。 
@@ -11,7 +11,7 @@ summary: SolidFire Active IQ のNode Throttlingページについて説明しま
 
 
 [role="lead"]
-選択したクラスタのサイドパネルから使用可能な* Nodes *>* Node Throttlling *ページで、クラスタ内のノードの調整割合を表示できます。ノードは、ディスプレイの左側にサムネイルレイアウトとして表示され、選択した時間範囲のスロットリングの程度に応じて順序が決まります。
+選択したクラスタのサイドパネルからアクセス可能な* QoS管理*>*ノードスロットル*ページでは、クラスタ内のノードの調整割合を表示できます。ノードは、ディスプレイの左側にサムネイルレイアウトとして表示され、選択した時間範囲のスロットリングの程度に応じて順序が決まります。
 
 ノードのスロットル情報の表示について学習します。
 

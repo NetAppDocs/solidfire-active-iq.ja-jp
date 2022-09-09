@@ -1,0 +1,26 @@
+---
+permalink: task-active-iq-qos-management-overview.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, nodes 
+summary: SolidFire Active IQ のQoS管理ページについて説明します。 
+---
+= QoS管理
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+選択したクラスタのサイドパネルにある* QoS管理*ページでは、QoSに関する推奨事項やクラスタ内のノードのスロットルに関する情報を確認できます。
+
+選択したノードのQoSに関する推奨事項とスロットルに関する情報を表示する方法について説明します。
+
+* link:task-active-iq-recommendations.html["推奨事項"]
+* link:task-active-iq-throttling.html["ノードスロットル"]
+
+
+
+
+== 詳細については、こちらをご覧ください
+
+https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]

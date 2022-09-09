@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: solidfire, active, iq, dashboard, single, cluster 
 summary: SolidFire Active IQ で選択したクラスタのダッシュボードページについて説明します。 
 ---
-= Single Cluster Viewダッシュボードの略
+= 単一のクラスタビューダッシュボード
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

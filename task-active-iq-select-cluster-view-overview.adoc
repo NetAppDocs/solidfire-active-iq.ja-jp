@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: solidfire, active, iq, cluster, information, specific 
 summary: SolidFire Active IQ でのクラスタ情報の表示について説明します。 
 ---
-= クラスタを選択します
+= クラスタを選択
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

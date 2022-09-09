@@ -1,17 +1,17 @@
 ---
-permalink: task-active-iq-active-nodes.html 
+permalink: task-active-iq-nodes.html 
 sidebar: sidebar 
 keywords: solidfire, active, iq, nodes 
 summary: SolidFire Active IQ のActive Nodesページについて説明します。 
 ---
-= アクティブノード
+= ノード
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-選択したクラスタのサイドパネルから使用可能な* Nodes *>* Active Nodes *ページで、クラスタ内のノードの情報を表示できます。
+選択したクラスタのサイドパネルから使用可能な* Nodes *ページでは、クラスタ内のノードに関する情報を表示できます。
 
 表示される詳細はシステムによって異なります。
 

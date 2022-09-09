@@ -71,13 +71,10 @@
   <block id="b22459c42fa05b62fcf6efae76d217e0" category="list-text"><block ref="b22459c42fa05b62fcf6efae76d217e0" category="inline-link-macro-rx"></block></block>
   <block id="df583ae7ba964fd4806b55904da81813" category="inline-link-macro">アラート</block>
   <block id="24065c72b6183812a2182740e9714ac5" category="list-text"><block ref="24065c72b6183812a2182740e9714ac5" category="inline-link-macro-rx"></block></block>
-  <block id="799a3fe6cff876fa3027852cc5707a2e" category="inline-link-macro">容量ベースのライセンス</block>
-  <block id="d670b82fe0337950f878b889f6933104" category="list-text"><block ref="d670b82fe0337950f878b889f6933104" category="inline-link-macro-rx"></block></block>
   <block id="d7d8c18bcc1cc8a4b125abd8f5edd2b9" category="inline-link-macro">期間容量</block>
   <block id="4eca902cc4ae3f106780131e01e88f4b" category="list-text"><block ref="4eca902cc4ae3f106780131e01e88f4b" category="inline-link-macro-rx"></block></block>
   <block id="0cefee73bdb85b3d4d3c8c689e1f1c0a" category="summary">SolidFire Active IQ のNode Throttlingページについて説明します。</block>
   <block id="25a0046a8717b473571a227501cd74e2" category="doc">ノードスロットル</block>
-  <block id="59fcde6598b4ab87af49810271746190" category="paragraph">選択したクラスタのサイドパネルから使用可能な* Nodes *&gt;* Node Throttlling *ページで、クラスタ内のノードの調整割合を表示できます。ノードは、ディスプレイの左側にサムネイルレイアウトとして表示され、選択した時間範囲のスロットリングの程度に応じて順序が決まります。</block>
   <block id="0df9a444c778c6506f58f43cc0edd434" category="paragraph">ノードのスロットル情報の表示について学習します。</block>
   <block id="4f54b4cc4d3960f8f2d85ac01981e683" category="list-text"><block ref="597facc265a5c58f66b22d76ff98b78e" category="inline-xref-macro-rx"></block></block>
   <block id="48a5c77d4bcca65797ec6cae22e9596d" category="list-text"><block ref="3aad2e6e5736129db0c2a3093b04110c" category="inline-xref-macro-rx"></block></block>
@@ -118,8 +115,6 @@
   <block id="277d58ac537e0d48d56c275fffae51d7" category="doc">クラスタを選択します</block>
   <block id="eb72be22d7fc9772a8840871ba71b0a8" category="paragraph">Select a Cluster *ドロップダウンリストからクラスタを選択すると、特定のクラスタのクラスタ情報を表示できます。クラスタ情報のカテゴリごとに、表形式またはグラフ形式で表示されます。</block>
   <block id="bf4336b6c177b0eea8653853a0f152fc" category="paragraph">ダッシュボード*クラスタの概要またはサイド・パネルの*レポート*ドロップダウンメニューで使用できる各種リストとフィルタについて説明します。</block>
-  <block id="8dbfa38b833867442634cdf2a6756bca" category="inline-link-macro">単一のクラスタビューダッシュボード</block>
-  <block id="394c111301227a2139f9444cb09edb3f" category="list-text"><block ref="394c111301227a2139f9444cb09edb3f" category="inline-link-macro-rx"></block></block>
   <block id="bbb006833f01ec561077704bef27cb73" category="inline-link-macro">クラスタのレポートオプション</block>
   <block id="e8451b80e6ac689caa1caf052ce73f12" category="list-text"><block ref="e8451b80e6ac689caa1caf052ce73f12" category="inline-link-macro-rx"></block></block>
   <block id="f6fb41cae39c67dddfa257340be0abea" category="summary">SolidFire Active IQ のページについて説明します。</block>
@@ -204,7 +199,6 @@
   <block id="9b99bf7d2bfd4b09363304c166832734" category="cell">クラスタ</block>
   <block id="331491aa4118975b5d832b3bf73155ca" category="cell">ライセンスのクラスタプールを構成するクラスタの数とID。</block>
   <block id="3c222046ebbbdf4ee7fc9e22673e99f4" category="summary">SolidFire Active IQ のQoSに関する推奨事項ページについて説明します。</block>
-  <block id="4bcb78be7a1595a1156ae7e0b3ed4052" category="paragraph">選択したクラスタのサイドパネルからQoS推奨事項*ページを使用して、最新のパフォーマンスデータに基づいてクラスタのサービス品質（QoS）に関する推奨事項を日単位で確認できます。QoSの推奨事項は、Elementソフトウェア11.x以降のクラスタでのみサポートされます。</block>
   <block id="b5634ec4fac0ffe7638c4b1bfc6bf2a0" category="paragraph">Active IQ は、最近のアクティビティのボリューム統計データに基づいてパフォーマンスの推奨事項を作成します。推奨事項はボリュームのQoS最大および最小保証IOPSに重点を置き、クラスタの改善が必要な場合にのみUIに表示されます。</block>
   <block id="e7f0956807b7442475634b0ca02cf15a" category="inline-link">SolidFire ストレージクラスタのパフォーマンスとQoS</block>
   <block id="6163567ff604813c415da0727538ba46" category="list-text"><block ref="6163567ff604813c415da0727538ba46" category="inline-link-rx"></block></block>
@@ -325,12 +319,10 @@
   <block id="273520ae2b0e4a202c36942359c00981" category="summary">SolidFire Active IQ の仮想ボリュームページについて説明します。</block>
   <block id="aca90d0397c9490780bfa614d3eda075" category="paragraph">選択したクラスタのサイドパネルからアクセス可能な* VVolページ*では、仮想ボリュームおよび仮想ボリュームに関連付けられたストレージコンテナ、プロトコルエンドポイント、バインド、およびホストに関する情報を表示できます。</block>
   <block id="6fa75a2879ede33bb8dcbe609ed93225" category="paragraph">VVOLに関連するタスクを次に示します。</block>
-  <block id="8ee38da65565b437e30df8b4fc2120c6" category="list-text"><block ref="cc3a190077155e9f11e55893a04126b0" category="inline-xref-macro-rx"></block></block>
   <block id="20a800131c78b90a5f3cfe114f23578f" category="list-text"><block ref="5ded2a046dc5ca86637f3ae24cd70a11" category="inline-xref-macro-rx"></block></block>
   <block id="427c47678b1253b05de4cc969a1e69a1" category="list-text"><block ref="0438ed7546a9ccca6ea31cb94f48bb41" category="inline-xref-macro-rx"></block></block>
   <block id="3a711397217e10d79c4f76137db4c3fa" category="list-text"><block ref="9d7a5a13ad72f63838a097b34692bfd2" category="inline-xref-macro-rx"></block></block>
   <block id="330ab730707379ab7dd6073af2af7a37" category="list-text"><block ref="842b4663dd531fbec8e79946bdde515b" category="inline-xref-macro-rx"></block></block>
-  <block id="1cd4dd4eff6bc90708a6a05c5d116a57" category="section-title">仮想ボリュームの詳細</block>
   <block id="0b286bd72571d699ece37ec34b85f379" category="paragraph">選択したクラスタの* vvols *&gt;* Virtual Volumes *ページには、クラスタ上の各アクティブな仮想ボリュームに関する情報が表示されます。</block>
   <block id="fd6bac109d479ec3660fd4daeeded3a1" category="cell">基盤となるボリュームの ID 。</block>
   <block id="72d6eb7733941a274a474f7cc4d97973" category="cell">Snapshot ID</block>
@@ -739,12 +731,6 @@
   <block id="1e6c78e80b17c6b7b921a36a86593bc0" category="inline-link-macro">ElementソフトウェアAPIのドキュメント</block>
   <block id="1b77c771de8f4f6c3baf80457d54f266" category="paragraph">選択したクラスタの* Reporting *ドロップダウンメニューの* API Collection *ページで、NetApp SolidFire Active IQ が使用するAPIメソッドを表示できます。これらの方法の詳細については、を参照してください <block ref="f22a227c10cf8287f1c4420ec53d0585" category="inline-link-macro-rx"></block>。</block>
   <block id="18cc1cea8bdf18884d35610fd16fdb77" category="admonition">これらのメソッドに加え、Active IQ は、クラスタの健常性を監視するためにネットアップのサポートおよびエンジニアリングによって使用される内部のAPI呼び出しをいくつか実行します。これらの呼び出しは、誤ってクラスタの機能を停止する可能性があるため、ドキュメント化されていません。Active IQ APIコレクションの一覧が必要な場合は、ネットアップサポートにお問い合わせください。</block>
-  <block id="0c4d60a128e7714f565d66085537b6a9" category="summary">SolidFire Active IQ のNodesページについて説明します。</block>
-  <block id="efff5bf65c7253a9f13c3da6e316514f" category="paragraph">選択したクラスタのサイドパネルから使用可能なノードページでは、クラスタ内のノードに関する情報を表示できます。</block>
-  <block id="86d657b6d468a7d4b765611ea754e07d" category="paragraph">選択したノードについて、アクティブノードの情報とスロットリングの割合を表示する方法を確認します。</block>
-  <block id="1fb1691d89c63b4c1b5243e04cd9f5b3" category="inline-link-macro">アクティブノード</block>
-  <block id="6c663e2ebd3f817914a7f20e8dd5b0dd" category="list-text"><block ref="6c663e2ebd3f817914a7f20e8dd5b0dd" category="inline-link-macro-rx"></block></block>
-  <block id="72fb384431f6bdc515c1be4fddf3b93e" category="list-text"><block ref="72fb384431f6bdc515c1be4fddf3b93e" category="inline-link-macro-rx"></block></block>
   <block id="bf807ea6b20dd5093c3aabab556b7151" category="summary">SolidFire Active IQ の問題のトラブルシューティングを行う。</block>
   <block id="174a62637bdb98e952c7c5e781c86dc4" category="doc">トラブルシューティングとサポート</block>
   <block id="d290f31130e082bed7a5e74006445b90" category="paragraph">SolidFire Active IQ またはその他のNetApp Element ソフトウェアベース製品を使用しているときに問題が発生したり、技術的な問題が発生したりした場合は、多くのリソースを利用して問題を解決することができます。</block>
@@ -864,7 +850,6 @@
   <block id="c9618f4b15d53501dee68300c1517890" category="inline-link-macro">SolidFire Active IQ の略</block>
   <block id="d54aa041fbc60813d85a10116f19acba" category="list-text">にログインします <block ref="4ebae971a9ad9014320b80bb2122d87f" category="inline-link-macro-rx"></block> クラスタを表示できることを確認します。</block>
   <block id="efaf46da503dff8a534048e87cf05c05" category="summary">SolidFire Active IQ のActive Nodesページについて説明します。</block>
-  <block id="aa2722f0dd149fa426d354dcd17c882b" category="paragraph">選択したクラスタのサイドパネルから使用可能な* Nodes *&gt;* Active Nodes *ページで、クラスタ内のノードの情報を表示できます。</block>
   <block id="efa3af2000f434495156bd711f91876d" category="paragraph">表示される詳細はシステムによって異なります。</block>
   <block id="a896398c6d72bfcee974918d75f31685" category="list-text"><block ref="6b768338154a8197cc67e41af532b78b" category="inline-xref-macro-rx"></block></block>
   <block id="f89f98ad3bf8dccd3b5dfa50eb3713e7" category="list-text"><block ref="5d3f50a6fbc21b3b38fa712473d01526" category="inline-xref-macro-rx"></block></block>
@@ -973,7 +958,6 @@
   <block id="c4ed6b7a93a993b1b380f32c53438c9d" category="cell">使用済み容量</block>
   <block id="231e178a523a4059cc5cd57dcea3d6a1" category="cell">お客様に属するすべてのクラスタの現在の消費容量。</block>
   <block id="fe39ad85a0161490bd3de016e8b78715" category="summary">SolidFire Active IQ で選択したクラスタのダッシュボードページについて説明します。</block>
-  <block id="6f62e89a8e7dade71af4a03b96ca6f70" category="doc">Single Cluster Viewダッシュボードの略</block>
   <block id="b65c21930213ff455568ac2a7793fdae" category="paragraph">選択したクラスタの*ダッシュボード*ページで、パフォーマンス、容量、コンピューティング利用率など、クラスタの詳細の概要を確認できます。</block>
   <block id="2b56b60f878922093facd42284848a0c" category="inline-image-macro">詳細については</block>
   <block id="322d18de68603bba1e7afd4ecddcacba" category="paragraph">クラスタに関する詳細情報を表示するには、* Show Details *ドロップダウンメニューを選択するか、を選択します <block ref="c32549a97e18cfcab584bd16f681f71f" category="inline-image-macro-rx" type="image"></block> アイコンをクリックすると、より詳細なレポート情報が表示されます。また、グラフの線やレポートデータにマウスポインタを合わせると、詳細が表示されます。</block>
@@ -1016,7 +1000,6 @@
   <block id="845fd12e3c31b51563647c4572d65ac3" category="cell">ストレージパフォーマンス</block>
   <block id="5106cb7ea917f7c22d63d5d6d8e17c02" category="cell">このグラフにはIOPSとスループットが表示されます。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">概要</block>
-  <block id="23de2a1ae75bcf2f4de17d30fe859a05" category="sidebar">すべてのクラスタビューダッシュボード</block>
   <block id="c5562ce2e22a86c247849904ecef3dc8" category="sidebar">レポート作成</block>
   <block id="9949f61a3827392769230f94e185dd46" category="sidebar">SolidFire Active IQ ツールを使用します</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
@@ -1027,4 +1010,18 @@
   <block id="0607bd332350ef193bc31ef1c742c508" category="sidebar">テクニカルサポートにお問い合わせください</block>
   <block id="1b4febc902d7bf51135668545d151a14" category="paragraph">このグラフには、選択したノードでホストされているボリュームの最小IOPSと最大IOPSの設定に基づいて、ノードの調整率が表示されます。</block>
   <block id="b28e179f94097b207a2dc9172aa4b4d0" category="list-text">インターネットにアクセスできる。外部接続のないダークサイトからは、 Active IQ コレクタサービスを使用できません。</block>
+  <block id="c357af7a99b77ac25c548aef6df0d1a8" category="list-text"><block ref="c357af7a99b77ac25c548aef6df0d1a8" category="inline-link-macro-rx"></block></block>
+  <block id="16beb139f89865caa5bdd51a5b9fadcd" category="summary">SolidFire Active IQ のQoS管理ページについて説明します。</block>
+  <block id="d57c256b226c8f444c1c9b3956085ad8" category="doc">QoS管理</block>
+  <block id="5085a6d22e1a79b7b82997ea97e58d72" category="paragraph">選択したクラスタのサイドパネルにある* QoS管理*ページでは、QoSに関する推奨事項やクラスタ内のノードのスロットルに関する情報を確認できます。</block>
+  <block id="be4ba82940f402388451f5cc834ece73" category="paragraph">選択したノードのQoSに関する推奨事項とスロットルに関する情報を表示する方法について説明します。</block>
+  <block id="5259ae4afb5996ff48788b2fa720114c" category="inline-link-macro">推奨事項</block>
+  <block id="a360a35f96153959d5b43412ede22440" category="list-text"><block ref="a360a35f96153959d5b43412ede22440" category="inline-link-macro-rx"></block></block>
+  <block id="74372e2fdee501a3a9fa25f6ef28ec0a" category="list-text"><block ref="74372e2fdee501a3a9fa25f6ef28ec0a" category="inline-link-macro-rx"></block></block>
+  <block id="00c4d35e3b52aa64cb1fc6084c8a6b2e" category="inline-link-macro">単一のクラスタビューダッシュボード</block>
+  <block id="926bcde67df442aed657539d0f151a77" category="list-text"><block ref="926bcde67df442aed657539d0f151a77" category="inline-link-macro-rx"></block></block>
+  <block id="36d2e075918140efadafcbd5672eb0ad" category="paragraph">選択したクラスタのサイドパネルから* QoS管理*&gt;推奨事項*ページを参照し、最新のパフォーマンスデータに基づいてクラスタの推奨されるサービス品質（QoS）を日単位で確認できます。QoSの推奨事項は、Elementソフトウェア11.x以降のクラスタでのみサポートされます。</block>
+  <block id="4408a36df9e9ed5aa8dd852943967324" category="list-text"><block ref="370537d09346032450865c36be0b772b" category="inline-xref-macro-rx"></block></block>
+  <block id="b01d0fd0e15cd69ca0c99c35e0db5116" category="paragraph">選択したクラスタのサイドパネルから使用可能な* Nodes *ページでは、クラスタ内のノードに関する情報を表示できます。</block>
+  <block id="9b549dfa7e57d3b25fa9e46fe3685b2b" category="paragraph">選択したクラスタのサイドパネルからアクセス可能な* QoS管理*&gt;*ノードスロットル*ページでは、クラスタ内のノードの調整割合を表示できます。ノードは、ディスプレイの左側にサムネイルレイアウトとして表示され、選択した時間範囲のスロットリングの程度に応じて順序が決まります。</block>
 </blocks>

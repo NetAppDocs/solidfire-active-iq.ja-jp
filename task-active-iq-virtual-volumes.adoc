@@ -15,7 +15,7 @@ summary: SolidFire Active IQ の仮想ボリュームページについて説明
 
 VVOLに関連するタスクを次に示します。
 
-* <<Virtual Volumes Details>>
+* <<Virtual Volumes>>
 * <<Storage Containers>>
 * <<Protocol Endpoints>>
 * <<Hosts>>
@@ -24,7 +24,7 @@ VVOLに関連するタスクを次に示します。
 
 
 
-== 仮想ボリュームの詳細
+== 仮想ボリューム
 
 選択したクラスタの* vvols *>* Virtual Volumes *ページには、クラスタ上の各アクティブな仮想ボリュームに関する情報が表示されます。
 
