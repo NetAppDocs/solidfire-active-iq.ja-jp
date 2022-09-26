@@ -17,8 +17,8 @@ summary: SolidFire Active IQ で選択したクラスタのダッシュボード
 
 詳細情報はシステムによって異なります。
 
-* <<Storage-only system>>
-* <<NetApp HCI system overview>>
+*  system
+*  HCI system overview
 
 
 

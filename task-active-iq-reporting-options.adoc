@@ -13,15 +13,15 @@ summary: SolidFire Active IQ で選択したクラスタのレポートオプシ
 [role="lead"]
 サイドパネルの* Reporting *ドロップダウンメニューについて説明します。
 
-* <<Capacity>>
-* <<Efficiency>>
-* <<Performance>>
-* <<Error log>>
-* <<Events>>
-* <<Alerts>>
-* <<iSCSI Sessions>>
-* <<Virtual Networks>>
-* <<API Collection>>
+* 
+* 
+* 
+*  log
+* 
+* 
+*  Sessions
+*  Networks
+*  Collection
 
 
 
@@ -224,7 +224,7 @@ NOTE: すべての複合効率は、報告された係数値を単純に乗算�
 | 見出し | 説明 
 
 
-| トリガー済み | アラートがActive IQ でトリガーされた時刻。クラスタ自体ではトリガーされません。 
+| トリガー済み | アラートがSolidFire Active IQ でトリガーされた時刻。クラスタ自体ではトリガーされません。 
 
 
 | 最後に通知しました | 最新のアラートEメールが送信された時刻です。 
@@ -305,7 +305,7 @@ NOTE: このデータには、FCノードによって生成されたiSCSIセッ�
 選択したクラスタの* Reporting *ドロップダウンメニューの* API Collection *ページで、NetApp SolidFire Active IQ が使用するAPIメソッドを表示できます。これらの方法の詳細については、を参照してください link:https://docs.netapp.com/us-en/element-software/api/index.html["ElementソフトウェアAPIのドキュメント"^]。
 
 
-NOTE: これらのメソッドに加え、Active IQ は、クラスタの健常性を監視するためにネットアップのサポートおよびエンジニアリングによって使用される内部のAPI呼び出しをいくつか実行します。これらの呼び出しは、誤ってクラスタの機能を停止する可能性があるため、ドキュメント化されていません。Active IQ APIコレクションの一覧が必要な場合は、ネットアップサポートにお問い合わせください。
+NOTE: これらのメソッドに加え、SolidFire Active IQ は、クラスタの健常性を監視するためにネットアップのサポートおよびエンジニアリングによって使用される内部のAPI呼び出しをいくつか実行します。これらの呼び出しは、誤ってクラスタの機能を停止する可能性があるため、ドキュメント化されていません。SolidFire Active IQ APIコレクションの一覧が必要な場合は、ネットアップサポートにお問い合わせください。
 
 
 

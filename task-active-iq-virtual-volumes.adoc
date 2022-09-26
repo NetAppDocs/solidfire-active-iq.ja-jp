@@ -15,11 +15,11 @@ summary: SolidFire Active IQ の仮想ボリュームページについて説明
 
 VVOLに関連するタスクを次に示します。
 
-* <<Virtual Volumes>>
-* <<Storage Containers>>
-* <<Protocol Endpoints>>
-* <<Hosts>>
-* <<Bindings>>
+*  Volumes
+*  Containers
+*  Endpoints
+* 
+* 
 
 
 

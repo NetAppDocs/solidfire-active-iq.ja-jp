@@ -11,71 +11,70 @@ sidebar:
   entries:
   - title: NetApp SolidFire Active IQ の略
     url: "/index.html"
+  - title: SolidFire Active IQ の利用を開始しましょう
     entries:
-    - title: SolidFire Active IQ の利用を開始しましょう
+    - title: 概要
+      url: "/task-active-iq-get-started-overview.html"
+    - title: SolidFire Active IQ の詳細をご覧ください
+      url: "/concept-active-iq-learn-about-active-iq.html"
+    - title: SolidFire Active IQ レポートを有効にします
+      url: "/task-active-iq-enable-reporting.html"
+    - title: SolidFire Active IQ UIを使用
+      url: "/task-active-iq-use-the-user-interface.html"
+  - title: SolidFire Active IQ を管理します
+    entries:
+    - title: 概要
+      url: "/task-active-iq-manage-overview.html"
+    - title: すべてのクラスタビュー
       entries:
       - title: 概要
-        url: "/task-active-iq-get-started-overview.html"
-      - title: SolidFire Active IQ の詳細をご覧ください
-        url: "/concept-active-iq-learn-about-active-iq.html"
-      - title: SolidFire Active IQ レポートを有効にします
-        url: "/task-active-iq-enable-reporting.html"
-      - title: Active IQ UIを使用
-        url: "/task-active-iq-use-the-user-interface.html"
-    - title: SolidFire Active IQ を管理します
+        url: "/task-active-iq-all-clusters-view-overview.html"
+      - title: All Clusters Viewダッシュボード
+        url: "/task-active-iq-all-clusters-view-dashboard.html"
+      - title: アラート
+        url: "/task-active-iq-alerts.html"
+      - title: 容量ベースのライセンス
+        url: "/task-active-iq-capacity-licensing.html"
+      - title: 期間容量
+        url: "/task-active-iq-term-capacity.html"
+    - title: クラスタを選択
       entries:
       - title: 概要
-        url: "/task-active-iq-manage-overview.html"
-      - title: すべてのクラスタビュー
-        entries:
-        - title: 概要
-          url: "/task-active-iq-all-clusters-view-overview.html"
-        - title: All Clusters Viewダッシュボード
-          url: "/task-active-iq-all-clusters-view-dashboard.html"
-        - title: アラート
-          url: "/task-active-iq-alerts.html"
-        - title: 容量ベースのライセンス
-          url: "/task-active-iq-capacity-licensing.html"
-        - title: 期間容量
-          url: "/task-active-iq-term-capacity.html"
-      - title: クラスタを選択
-        entries:
-        - title: 概要
-          url: "/task-active-iq-select-cluster-overview.html"
-        - title: 単一のクラスタビューダッシュボード
-          url: "/task-active-iq-single-cluster-view-dashboard.html"
-        - title: レポート作成
-          url: "/task-active-iq-reporting-options.html"
-      - title: ノード
-        url: "/task-active-iq-nodes.html"
-      - title: ドライブ
-        url: "/task_active_iq_drives.html"
-      - title: 個のボリューム
-        entries:
-        - title: 概要
-          url: "/task_active_iq_volumes_overview.html"
-        - title: アクティブなボリューム
-          url: "/task-active-iq-active-volumes.html"
-        - title: SnapshotとSnapshotスケジュール
-          url: "/task-active-iq-snapshots-and-schedules.html"
-      - title: レプリケーション
-        url: "/task_active_iq_replication.html"
-      - title: 仮想ボリューム
-        url: "/task-active-iq-virtual-volumes.html"
-      - title: QoS管理
-        entries:
-        - title: 概要
-          url: "/task-active-iq-qos-management-overview.html"
-        - title: 推奨事項
-          url: "/task-active-iq-recommendations.html"
-        - title: ノードスロットル
-          url: "/task-active-iq-throttling.html"
-      - title: 仮想マシン
-        url: "/task-active-iq-virtual-machines.html"
-      - title: VMwareアラーム
-        url: "/task-active-iq-vmware-alarms.html"
-    - title: トラブルシューティングとサポート
-      url: "/task-active-iq-troubleshoot-support.html"
+        url: "/task-active-iq-select-cluster-overview.html"
+      - title: 単一のクラスタビューダッシュボード
+        url: "/task-active-iq-single-cluster-view-dashboard.html"
+      - title: レポート作成
+        url: "/task-active-iq-reporting-options.html"
+    - title: ノード
+      url: "/task-active-iq-nodes.html"
+    - title: ドライブ
+      url: "/task_active_iq_drives.html"
+    - title: 個のボリューム
+      entries:
+      - title: 概要
+        url: "/task_active_iq_volumes_overview.html"
+      - title: アクティブなボリューム
+        url: "/task-active-iq-active-volumes.html"
+      - title: SnapshotとSnapshotスケジュール
+        url: "/task-active-iq-snapshots-and-schedules.html"
+    - title: レプリケーション
+      url: "/task_active_iq_replication.html"
+    - title: 仮想ボリューム
+      url: "/task-active-iq-virtual-volumes.html"
+    - title: QoS管理
+      entries:
+      - title: 概要
+        url: "/task-active-iq-qos-management-overview.html"
+      - title: 推奨事項
+        url: "/task-active-iq-recommendations.html"
+      - title: ノードスロットル
+        url: "/task-active-iq-throttling.html"
+    - title: 仮想マシン
+      url: "/task-active-iq-virtual-machines.html"
+    - title: VMwareアラーム
+      url: "/task-active-iq-vmware-alarms.html"
+  - title: トラブルシューティングとサポート
+    url: "/task-active-iq-troubleshoot-support.html"
 homepage:
   tiles:
   - title: SolidFire Active IQ ツールを使用します

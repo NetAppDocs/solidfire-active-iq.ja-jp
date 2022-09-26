@@ -13,9 +13,9 @@ summary: SolidFire Active IQ でボリュームの詳細を表示する方法に
 [role="lead"]
 ボリューム*ページでは、アクティブなボリューム、個々のボリューム、パフォーマンスグラフに関する詳細を確認できます。
 
-* <<View active volume details>>
-* <<View individual volume details>>
-* <<View individual volume performance graphs>>
+*  active volume details
+*  individual volume details
+*  individual volume performance graphs
 
 
 
@@ -73,13 +73,13 @@ summary: SolidFire Active IQ でボリュームの詳細を表示する方法に
 | バースト IOPS | 短時間に許可される最大IOPS。 
 
 
-| 平均IOPSの前回の30分 | このノードがプライマリとして設定されているすべてのボリュームに対する、過去30分間に実行された平均IOPSの合計。 
+| 平均IOPSの前回の30分 | このノードがプライマリとして設定されているすべてのボリュームに対して実行された平均IOPS。IOPSは、クラスタ側で500ミリ秒を超える間隔で収集されます。SolidFire Active IQ は、これらの値を60秒間隔で収集します。各ボリュームの平均IOPSは、過去30分間に収集されたSolidFire Active IQ の値から計算されます。 
 
 
-| 平均スループットの過去30分 | このノードがプライマリとして設定されているすべてのボリュームに対する、過去30分間に実行された平均スループットの合計。 
+| 平均スループットの過去30分 | このノードがプライマリとして設定されているすべてのボリュームで実行された平均スループット。スループットは、クラスタ側で500ミリ秒を超える間隔で収集されます。SolidFire Active IQ は、これらの値を60秒間隔で収集します。各ボリュームの平均スループットは、過去30分間に収集されたSolidFire Active IQ 値から計算されます。 
 
 
-| 平均レイテンシ（µ s）過去30分 | このノードがプライマリとして設定されているすべてのボリュームに対する読み取りおよび書き込み処理が、過去30分間に測定された平均時間（マイクロ秒）。 
+| 平均レイテンシ（µ s）過去30分 | このノードがプライマリとして設定されているすべてのボリュームへの読み取り処理と書き込み処理の平均時間（マイクロ秒）。レイテンシは、クラスタ側で500ミリ秒を超える間隔で測定されます。SolidFire Active IQ は、これらの値を60秒間隔で収集します。各ボリュームの平均レイテンシは、過去30分間に収集されたSolidFire Active IQ の値から計算されます。詳細については、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/How_is_read_and_write_latency_measured_in_Element_Software_%3F["こちらの技術情報アーティクル"^]。 
 
 
 | Snapshot | ボリュームに対して作成された Snapshot の数。 
@@ -127,7 +127,7 @@ summary: SolidFire Active IQ でボリュームの詳細を表示する方法に
 | 平均スループット | 過去30分間にボリュームに対して実行された平均スループット。 
 
 
-| 平均レイテンシ | 過去30分間にボリュームに対する読み取りおよび書き込み処理が完了するまでの平均時間（マイクロ秒）。 
+| 平均レイテンシ | 過去30分間にボリュームに対する読み取りおよび書き込み処理が完了するまでの平均時間（マイクロ秒）。詳細については、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/How_is_read_and_write_latency_measured_in_Element_Software_%3F["こちらの技術情報アーティクル"^]。 
 
 
 2+| その他の詳細は、* Show Volume Details *ドロップダウンメニューで確認できます。 

@@ -11,10 +11,10 @@ summary: 管理ノードでのSolidFire Active IQ レポート機能の有効化
 
 
 [role="lead"]
-インストールまたはアップグレード時にSolidFire Active IQ レポート機能を有効にしていない場合は、管理ノードからクラスタのデータペイロードをActive IQ サーバが受信できるようにする前に、管理ノードでレポート機能を有効にする必要があります。接続のセットアップが完了すると、クラスタからActive IQ サーバに情報が送信されます。その後、クラスタをActive IQ UIに表示してクラスタ情報を確認できます。
+インストールまたはアップグレード時にSolidFire Active IQ レポート機能を有効にしていない場合は、管理ノードからクラスタのデータペイロードをSolidFire Active IQ サーバが受信できるようにする前に、管理ノードでレポート機能を有効にする必要があります。接続のセットアップが完了すると、クラスタからSolidFire Active IQ サーバに情報が送信されます。その後、クラスタをSolidFire Active IQ UIに表示してクラスタ情報を確認できます。
 
 
-NOTE: Active IQ では、Google ChromeブラウザとFirefoxブラウザがサポートされます。
+NOTE: SolidFire Active IQ では、Google ChromeブラウザとFirefoxブラウザがサポートされます。
 
 .作業を開始する前に
 * Quality of Service（QoS；サービス品質）などのActive IQ の一部の機能を正しく機能させるには、Element 11.3以降が必要です。Active IQ のすべての機能を使用できることを確認するために、次のことを推奨します。

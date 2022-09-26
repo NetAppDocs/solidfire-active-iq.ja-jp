@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: solidfire, active, iq, enable, reporting 
 summary: SolidFire Active IQ のUIの機能について説明します。 
 ---
-= Active IQ UIを使用
+= SolidFire Active IQ UIを使用
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -13,20 +13,20 @@ summary: SolidFire Active IQ のUIの機能について説明します。
 [role="lead"]
 でUIの機能について説明します link:https://activeiq.solidfire.com/["SolidFire Active IQ （ログインが必要）"^]：
 
-* <<Use filters>>
-* <<Sort lists>>
-* <<View graphs and select date ranges>>
-* <<Export list views and report data>>
-* <<Select a cluster>>
-* <<Icon reference>>
-* <<Provide feedback>>
+*  filters
+*  lists
+*  graphs and select date ranges
+*  list views and report data
+*  a cluster
+*  reference
+*  feedback
 
 
 
 
 == フィルタを使用します
 
-Active IQ の各ページでは、リスト情報のソートやフィルタリングを実行できます。リスト（ノード、ドライブ、ボリュームなど）を表示するときは、フィルタ機能を使用して情報を絞り込んで画面に収まるようにすることができます。
+SolidFire Active IQ の各ページでは、リスト情報のソートやフィルタリングを実行できます。リスト（ノード、ドライブ、ボリュームなど）を表示するときは、フィルタ機能を使用して情報を絞り込んで画面に収まるようにすることができます。
 
 .手順
 . リスト情報を表示するときは、*フィルター*を選択します。
@@ -53,7 +53,7 @@ NOTE: 一部のテーブルには、列をビューから除外するオプシ�
 
 == リストを並べ替えます
 
-Active IQ UIの特定のページでは、リスト情報を1つ以上の列でソートできます。これにより、画面上で必要な情報を並べ替えることができます。
+SolidFire Active IQ UIの特定のページでは、リスト情報を1つ以上の列でソートできます。これにより、画面上で必要な情報を並べ替えることができます。
 
 .手順
 . 1つの列でソートするには、情報が目的の順序でソートされるまで、列見出しを選択します。
@@ -72,7 +72,7 @@ Active IQ UIの特定のページでは、リスト情報を1つ以上の列で�
 
 == グラフを表示して日付範囲を選択します
 
-Active IQ のグラフと日付範囲はシームレスに統合されます。日付範囲を選択すると、そのページ上のすべてのグラフが選択した範囲に調整されます。各グラフには、デフォルトの日付範囲は7日間表示されます。
+SolidFire Active IQ のグラフと日付範囲はシームレスに統合されます。日付範囲を選択すると、そのページ上のすべてのグラフが選択した範囲に調整されます。各グラフには、デフォルトの日付範囲は7日間表示されます。
 
 カレンダーのドロップダウンボックスまたは事前定義された範囲のセットから日付範囲を選択できます。日付範囲は、現在のブラウザ時間（選択した時間）と設定した時間を使用して計算されます。また、下部の棒グラフの上に直接ブラシをかけることで、目的の間隔を選択することもできます。使用可能な場合は、左側のサムネイルレイアウトを選択してグラフを切り替えます。これらのレイアウトは非表示にすることもできます。
 
@@ -97,10 +97,10 @@ image:graphs_and_date_ranges.PNG["グラフと日付範囲"]
 
 == クラスタを選択
 
-Active IQ では、環境内の個々のクラスタに関する情報を表示できます。
+SolidFire Active IQ では、環境内の個々のクラスタに関する情報を表示できます。
 
 .手順
-. Active IQ ダッシュボードで、* Select a Cluster *を選択します。
+. SolidFire Active IQ ダッシュボードで、* Select a Cluster *を選択します。
 . ドロップダウンメニューには、使用可能なクラスタが表示されます。
 . 検索フィールドを使用して、目的のクラスタまたは最近表示したクラスタを検索します。
 . クラスタを選択する名前を選択します。
@@ -110,7 +110,7 @@ Active IQ では、環境内の個々のクラスタに関する情報を表示�
 
 == アイコンのリファレンスです
 
-Active IQ のUIを表示すると、次のアイコンが表示されます。
+SolidFire Active IQ UIを表示すると、次のアイコンが表示されます。
 
 [cols="25,75"]
 |===
@@ -161,7 +161,7 @@ image:more_details.PNG["詳細アイコン"]
 
 == フィードバックを提供する
 
-Active IQ UIの改善やUIに関する問題への対処には、UIからアクセス可能なEメールのフィードバックオプションを使用します。
+SolidFire Active IQ UIの改善やUIに関する問題への対処には、UIからアクセス可能なEメールのフィードバックオプションを使用します。
 
 .手順
 . UIの任意のページで、を選択します image:menu.PNG["メニューアイコン"] アイコンをクリックし、* Feedback *を選択します。

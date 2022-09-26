@@ -15,12 +15,12 @@ summary: SolidFire Active IQ のページについて説明します。
 
 * link:task-active-iq-all-clusters-view-overview.html["すべてのクラスタビュー"]
 * link:task-active-iq-select-cluster-overview.html["クラスタを選択します"]
-* link:task-active-iq-nodes-overview.html["ノード"]
+* link:task-active-iq-nodes.html["ノード"]
 * link:task_active_iq_drives.html["ドライブ"]
 * link:task_active_iq_volumes_overview.html["個のボリューム"]
 * link:task_active_iq_replication.html["レプリケーション"]
 * link:task-active-iq-virtual-volumes.html["仮想ボリューム"]
-* link:task-active-iq-qos-recommendations.html["QoSに関する推奨事項"]
+* link:task-active-iq-qos-management-overview.html["QoS管理"]
 * link:task-active-iq-virtual-machines.html["仮想マシン（NetApp HCI クラスタのみ）"]
 * link:task-active-iq-vmware-alarms.html["VMwareアラーム（NetApp HCI クラスタのみ）"]
 

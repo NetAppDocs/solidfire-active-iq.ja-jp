@@ -13,8 +13,8 @@ summary: SolidFire Active IQ でSnapshotの詳細とSnapshotスケジュール�
 [role="lead"]
 SnapshotとSnapshotのスケジュールに関する情報を確認する方法を次に示します。
 
-* <<Snapshots>>
-* <<Snapshot Schedules>>
+* 
+*  Schedules
 
 
 
