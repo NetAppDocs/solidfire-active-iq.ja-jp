@@ -80,9 +80,6 @@
   <block id="48a5c77d4bcca65797ec6cae22e9596d" category="list-text"><block ref="3aad2e6e5736129db0c2a3093b04110c" category="inline-xref-macro-rx"></block></block>
   <block id="f3bf056f68b8355023f77881422e7f1f" category="section-title">グラフを表示して日付範囲を選択します</block>
   <block id="3cb48fc4c57bd3575e0c430007bfe074" category="paragraph">カレンダーのドロップダウンボックスまたは事前定義された範囲のセットから日付範囲を選択できます。日付範囲は、現在のブラウザ時間（選択した時間）と設定した時間を使用して計算されます。また、下部の棒グラフの上に直接ブラシをかけることで、目的の間隔を選択することもできます。左側のサムネイルレイアウトを選択すると、グラフを切り替えることができます。</block>
-  <block id="71f0bed4fc7583649837eed2b8ee49c4" category="list-text">緑=最大39%</block>
-  <block id="a4965bbdc77616cfb8e9619447a55ffc" category="list-text">黄色= 40～59%</block>
-  <block id="77b4dabdac23af0111f4e3fffcb2f6e5" category="list-text">赤= 59%を超えています</block>
   <block id="f8feac3680b404eb25b3b1fea6aa6e70" category="inline-link-macro">クラスタでのQoSに関する推奨事項について説明します</block>
   <block id="ea716f1a51591b923cd83aaa8faa830c" category="paragraph"><block ref="4334742ebeca91bbb52799a64e982fde" category="inline-link-macro-rx"></block>。</block>
   <block id="dd76252ea7a50def2a98f218cb1505b4" category="inline-link">こちらの技術情報アーティクル</block>
@@ -983,7 +980,6 @@
   <block id="08edd2123939d5309dced149763a50ee" category="sidebar">NetApp HCI</block>
   <block id="d60c463bb4096f3ed4bd1618626dfe10" category="sidebar">トラブルシューティングを行う</block>
   <block id="0607bd332350ef193bc31ef1c742c508" category="sidebar">テクニカルサポートにお問い合わせください</block>
-  <block id="1b4febc902d7bf51135668545d151a14" category="paragraph">このグラフには、選択したノードでホストされているボリュームの最小IOPSと最大IOPSの設定に基づいて、ノードの調整率が表示されます。</block>
   <block id="b28e179f94097b207a2dc9172aa4b4d0" category="list-text">インターネットにアクセスできる。外部接続のないダークサイトからは、 Active IQ コレクタサービスを使用できません。</block>
   <block id="c357af7a99b77ac25c548aef6df0d1a8" category="list-text"><block ref="c357af7a99b77ac25c548aef6df0d1a8" category="inline-link-macro-rx"></block></block>
   <block id="16beb139f89865caa5bdd51a5b9fadcd" category="summary">SolidFire Active IQ のQoS管理ページについて説明します。</block>
@@ -1024,4 +1020,5 @@
   <block id="1283e547f2c97bde5254234dd71e8920" category="cell">VMwareアラームがトリガーされてSolidFire Active IQ に報告されたときに通知を送信します。</block>
   <block id="8f7bdd75076dbc076948c8a43fa2529c" category="paragraph">SolidFire Active IQ アラートのユーザは、システムでトリガーされる各アラートに対して異なるステータスEメールを受信します。アラートに関連付けられるステータスEメールには、次の3種類があります。</block>
   <block id="472062bb6f5f96a2db31c5e5b3da2b6e" category="admonition">これらのメソッドに加え、SolidFire Active IQ は、クラスタの健常性を監視するためにネットアップのサポートおよびエンジニアリングによって使用される内部のAPI呼び出しをいくつか実行します。これらの呼び出しは、誤ってクラスタの機能を停止する可能性があるため、ドキュメント化されていません。SolidFire Active IQ APIコレクションの一覧が必要な場合は、ネットアップサポートにお問い合わせください。</block>
+  <block id="f107820fc2ea40af48df224b45278cae" category="paragraph">このグラフには、選択したノードでホストされているボリュームの最小IOPSと最大IOPSの設定に基づいて、選択した期間におけるノードのスロットルが表示されます。色は、緑（なし）、黄（制限）、または赤（高）のスロットリング量を表します。詳細については、次のグラフ例を参照してください。</block>
 </blocks>
