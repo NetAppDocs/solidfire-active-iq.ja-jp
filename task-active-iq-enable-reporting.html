@@ -143,6 +143,17 @@
               $("#mysidebar").navgoco('toggle', true);
           });
 
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/ja-jp/solidfire-active-iq"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
       });
 
   </script>
@@ -256,6 +267,8 @@
         </a>
       </div>
 
+      
+      
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
@@ -604,7 +617,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> SolidFire Active IQ の利用を開始しましょう</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="概要"
@@ -641,7 +654,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> SolidFire Active IQ を管理します</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="概要"
@@ -657,7 +670,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> すべてのクラスタビュー</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="概要"
@@ -701,7 +714,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> クラスタを選択</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="概要"
@@ -745,7 +758,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 個のボリューム</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="概要"
@@ -789,7 +802,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> QoS管理</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="概要"
@@ -843,6 +856,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -1134,11 +1148,7 @@ SolidFire Active IQ では、Google ChromeブラウザとFirefoxブラウザが�
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-              <span class="n-footer__fine-print">Web サイトについてのフィードバックを</span>
-              <a target="_self" href="javascript:netapp_mailto()">お寄せください</a>
-            </li>
-            <li class="n-footer__copyright-link">
-              <a href="https://docs.netapp.com/ja-jp/announcements/">お知らせ</a>
+              <a target="_self" href="javascript:netapp_mailto()">このページに関するフィードバックをお寄せください</a>
             </li>
           </ul>
         </div>
