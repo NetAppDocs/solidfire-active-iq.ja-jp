@@ -13,13 +13,13 @@ summary: SolidFire Active IQ のUIの機能について説明します。
 [role="lead"]
 でUIの機能について説明します link:https://activeiq.solidfire.com/["SolidFire Active IQ （ログインが必要）"^]：
 
-*  filters
-*  lists
-*  graphs and select date ranges
-*  list views and report data
-*  a cluster
-*  reference
-*  feedback
+* <<フィルタを使用します>>
+* <<リストを並べ替えます>>
+* <<グラフを表示して日付範囲を選択します>>
+* <<リストビューとレポートデータをエクスポートします>>
+* <<クラスタを選択>>
+* <<アイコンのリファレンスです>>
+* <<フィードバックを提供する>>
 
 
 
@@ -79,6 +79,7 @@ SolidFire Active IQ のグラフと日付範囲はシームレスに統合され
 グラフの線にカーソルを合わせると、ポイントインタイムの詳細が表示されます。
 
 .グラフの例を展開します
+[%collapsible]
 ====
 image:graphs_and_date_ranges.PNG["グラフと日付範囲"]
 

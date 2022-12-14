@@ -13,9 +13,9 @@ summary: SolidFire Active IQ でボリュームの詳細を表示する方法に
 [role="lead"]
 ボリューム*ページでは、アクティブなボリューム、個々のボリューム、パフォーマンスグラフに関する詳細を確認できます。
 
-*  active volume details
-*  individual volume details
-*  individual volume performance graphs
+* <<アクティブなボリュームの詳細を表示します>>
+* <<個々のボリュームの詳細を表示します>>
+* <<個々のボリュームのパフォーマンスグラフを表示します>>
 
 
 

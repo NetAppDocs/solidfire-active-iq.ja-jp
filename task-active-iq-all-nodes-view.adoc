@@ -18,8 +18,8 @@ NOTE: SolidFire Active IQ アカウントに関連付けられている会社名
 
 All Nodesページとスロットルノードページの詳細を確認します。
 
-*  information about all nodes
-*  information about throttled nodes
+* <<すべてのノードに関する情報を表示します>>
+* <<スロットルされたノードに関する情報を表示します>>
 
 
 

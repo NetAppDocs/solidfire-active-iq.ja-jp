@@ -15,8 +15,8 @@ summary: SolidFire Active IQ のNode Throttlingページについて説明しま
 
 ノードのスロットル情報の表示について学習します。
 
-*  graphs and select date ranges
-*  node throttling data
+* <<グラフを表示して日付範囲を選択します>>
+* <<ノードスロットルデータをエクスポートします>>
 
 
 
@@ -30,6 +30,7 @@ SolidFire Active IQ のグラフと日付範囲はシームレスに統合され
 このグラフには、選択したノードでホストされているボリュームの最小IOPSと最大IOPSの設定に基づいて、選択した期間におけるノードのスロットルが表示されます。色は、緑（なし）、黄（制限）、または赤（高）のスロットリング量を表します。詳細については、次のグラフ例を参照してください。
 
 .グラフの例を展開します
+[%collapsible]
 ====
 image:node_throttling_range.PNG["ノードのスロットルグラフ"]
 
