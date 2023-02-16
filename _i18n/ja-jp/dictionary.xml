@@ -548,7 +548,6 @@
   <block id="e5574d4f50cf65adfb39e54e1a5f5ab1" category="paragraph">ポリシーはシステムから完全に削除されます。</block>
   <block id="685a82571a4b315892d300d3410d13b9" category="section-title">抑制されたクラスタを表示します</block>
   <block id="a5358ca3015b1305c6ef8a4f2ae99f44" category="paragraph">すべてのクラスタビュー*内の* Alerts *ドロップダウンメニューの* Suppressed Clusters *ページでは、アラート通知が抑制されているクラスタのリストを表示できます。</block>
-  <block id="d8d9aa68c453cb9b41b4de4fced325c7" category="paragraph">ネットアップサポートまたはお客様は、メンテナンスの際にクラスタのアラート通知を停止できます。アップグレードの抑制を使用してクラスタに対する通知を停止した場合、アップグレード中に発生する一般的なアラートは送信されません。また、指定した期間、クラスタのアラート通知を停止するフルアラート抑制オプションもあります。通知が抑制されたときに送信されない電子メールアラートは、[* Alerts]メニューの[*History]ページで確認できます。定義した期間が経過すると、自動的に通知が停止されます。</block>
   <block id="4a6a16c3e094da903bd21906ee24fcd6" category="paragraph">以下の情報は、* Suppressed Clusters *ページで確認できます。</block>
   <block id="10133a314a85c1c1a92fa3e662cdda44" category="cell">クラスタに割り当てられている会社の名前。</block>
   <block id="c13733ab0cde1d7164208b013c7e85db" category="cell">クラスタID</block>
@@ -556,12 +555,10 @@
   <block id="d6ed36bb2b00046e0edf3d24b526b7ad" category="cell">クラスタ名</block>
   <block id="e3d5f2a7512ede9e52a01c31493bfb81" category="cell">クラスタに割り当てられている名前。</block>
   <block id="2bbc845892f400626baab5af687527c5" category="cell">開始時間</block>
-  <block id="4820b9ef9bd7442acc6ccdf08f9614d3" category="cell">通知の抑制が開始された正確な時刻。</block>
   <block id="c91a577b72313356fad611c55f43c10f" category="cell">終了時刻</block>
   <block id="64be5fe1b490e9a5f15e68f4baa65485" category="cell">通知の抑制が終了する予定の正確な時刻</block>
   <block id="2928a5c9dcc57c93a61ff231dce7d08e" category="cell">クラスタの通知を停止または再開するオプションを選択します。</block>
   <block id="91b4bb4cfabe9824c1024d2207177139" category="section-title">クラスタ通知を停止</block>
-  <block id="9858acb2dd14a30e26cf805c6de0730a" category="paragraph">アラート通知は、単一のクラスタまたは複数のクラスタについて、クラスタレベルで停止することができます。</block>
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">次のいずれかを実行します。</block>
   <block id="16b8d0f1d7e1b42eb46dcd70d096ecf4" category="list-text">ダッシュボード*の概要で、抑制するクラスタの操作メニューを選択します。</block>
   <block id="36dbb4ac73c2a1146dafa537aa33167b" category="list-text">* Alerts *&gt;* Cluster Suppression *から、* Suppress Clusters *を選択します。</block>
@@ -569,7 +566,6 @@
   <block id="3faf81240a474d1bab3caae427a0b972" category="list-text">[* Suppressed Clusters]ページで[* Suppress Clusters]*ボタンを選択した場合は、クラスタを選択します。</block>
   <block id="d9eec58efcbfdf3d4c1babd111ed996c" category="inline-xref">抑制タイプについて説明します</block>
   <block id="cb886f47c22a31667b6be5251d178c52" category="list-text">アラート抑制タイプとして、「* Full *」、「* Upgrades *」、「Compute *」、「* NodeHardware」、「* Drive *」のいずれかを選択します。 *ネットワーク*または*電源*。 <block ref="a879a530d2e9cfbfff346e782418a668" category="inline-xref-macro-rx"></block>。</block>
-  <block id="dbb77a21634d63a653c797feb9464c44" category="admonition">1つのクラスタに複数の抑制タイプを設定できますが、抑制タイプを共有することはできません。たとえば、クラスタには「フル」、「コンピューティング」、「ドライブ」などの抑制を設定できますが、2つの「フル」の抑制を設定することはできません。抑制がすでにクラスタに存在する場合、グレー表示になります。既存の抑制を置き換えるには、*既存を上書き*を選択し、新しい抑制タイプを選択します。</block>
   <block id="d2f9ee75eef16569d25256f62c3285af" category="list-text">共通の期間を選択するか、通知を停止するカスタムの終了日時を入力します。</block>
   <block id="399e38cad3fefa8ffc7773b5e82ba0a4" category="list-text">*抑制*を選択します。</block>
   <block id="55c71a545e88a736b0fd984ef1cf9011" category="admonition">この操作は、ネットアップサポートへの特定またはすべての通知も停止します。クラスタの抑制を有効にすると、ネットアップサポート、またはクラスタを表示する権限を持つすべてのユーザが抑制状態を更新できます。</block>
@@ -1066,4 +1062,12 @@
   <block id="f15e45347229ad94158fcbd6d2423fb7" category="cell">過去30日間のノードのスロットルの合計数に対する割合。</block>
   <block id="13b17ea50aa3270a0eb1ac21882cd1b6" category="cell">詳細については、を選択してください。<block ref="b88c7530ca9d8b23f1e4691f94e3f70b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="db2e76d805debcb4c30511df6e0aecf1" category="list-text"><block ref="db2e76d805debcb4c30511df6e0aecf1" category="inline-link-macro-rx"></block></block>
+  <block id="0e3b63363a35e9f7a5dee72963106a92" category="paragraph">ネットアップサポートまたはお客様は、メンテナンスの際にクラスタのアラート通知を停止できます。アップグレードの抑制を使用してクラスタに対する通知を停止した場合、アップグレード中に発生する一般的なアラートは送信されません。また、指定した期間、クラスタのアラート通知を停止するフルアラート抑制オプションもあります。通知が抑制されたときに送信されない電子メールアラートは、[* Alerts]メニューの[*History]ページで確認できます。定義した期間が経過すると、自動的に通知が停止されます。通知の抑制を早期に終了するには、ドロップダウンメニューで[通知の再開]を選択します。</block>
+  <block id="1b1b4ed1e5c3651d0098e519d90608f1" category="cell">通知の抑制が開始された、または開始がスケジュールされている正確な時刻。</block>
+  <block id="57347427d54a8b3062a13502efbb0b39" category="paragraph">アラート通知のステータスを示します。</block>
+  <block id="4e5f06cf705243a2cf7308548afc1545" category="list-text">* Active *：アラート通知の抑制がアクティブです。</block>
+  <block id="50530d3f54881ad7130c640aaca2dbae" category="list-text">*future *:警告通知の抑制は、将来の日付と時刻にスケジュールされます。</block>
+  <block id="57829e1c527aadb9862b10c223954f81" category="paragraph">単一のクラスタまたは複数のクラスタの現在の日時またはスケジュールのアラート通知をクラスタレベルで停止して、将来の日時に開始することができます。</block>
+  <block id="fb0d7f8aefdf99cea1fcfde269bee06a" category="admonition">1つのクラスタに複数の抑制タイプを設定でき、同じ抑制タイプの複数の選択を含めることができます。スケジュールされた抑制期間中に抑制タイプがすでに存在する場合、そのタイプはグレー表示されます。この抑制タイプを再度選択するには、*既存のオーバーラップ*を選択します。同じ抑制タイプの複数の選択では、重複する時間を設定できます。また、将来の抑制をスケジュールする場合は、異なる時間に設定することもできます。2つの抑制に期間が重複している場合、この機能は、1つの抑制を持つことと同じです。開始時間は、最も早い時点から、最後の時点までです。</block>
+  <block id="8c585eacf0d12977061621d6833ec987" category="list-text">通知の抑制を開始する開始日時を選択します。</block>
 </blocks>
