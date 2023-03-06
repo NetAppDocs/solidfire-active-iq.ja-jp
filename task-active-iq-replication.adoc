@@ -17,6 +17,8 @@ summary: 'SolidFire Active IQ の[複製]ページについて説明します。
 
 * <<cluster_pairs,クラスタペア>>
 * <<volume_pairs,ボリュームペア>>
+* <<snapmirror_endpoints,SnapMirrorエンドポイント>>
+* <<snapmirror_relationships,SnapMirror関係>>
 
 
 
@@ -94,6 +96,97 @@ NOTE: レプリケーションがアクティブな状態のターゲットボ�
 |===
 
 
+== SnapMirrorエンドポイント
+
+選択したクラスタの*[レプリケーション]*>*[SnapMirrorエンドポイント]*ページでは、SnapMirrorエンドポイントに関する次の情報を確認できます。
+
+[cols="30,70"]
+|===
+| 見出し | 説明 
+
+
+| エンドポイントID | エンドポイントID番号。 
+
+
+| リモートクラスタ名 | ペアのリモートクラスタの名前。 
+
+
+| クラスタ管理IP | クラスタ管理IPアドレス。 
+
+
+| IPS | 仮想ネットワークで使用される仮想ネットワークIPアドレスの範囲。 
+
+
+| 関係 | エンドポイントに対して設定されている関係の数。 
+
+
+| ステータス | これは、エンドポイントが現在接続されているかどうかを示します。値は* connected *または* disconnected *です。 
+|===
+
+
+== SnapMirror関係
+
+選択したクラスタの*[レプリケーション]*>*[SnapMirror関係]*ページでは、SnapMirror関係に関する次の情報を確認できます。
+
+[cols="30,70"]
+|===
+| 見出し | 説明 
+
+
+| エンドポイントID | エンドポイントID番号。 
+
+
+| ソースボリューム | ソースのボリュームID。 
+
+
+| デスティネーションクラスタ | SnapMirror関係のデスティネーションクラスタの名前。 
+
+
+| デスティネーションボリューム | SnapMirror関係のデスティネーションボリュームの名前。 
+
+
+| 状態  a| 
+ミラー関係の状態。次の3つの値を指定できます。
+
+* uninitialized：デスティネーションボリュームは初期化されていません。
+* SnapMirrored：デスティネーションボリュームは初期化されており、SnapMirror更新を受信できる状態です。
+* Broken-off：デスティネーションボリュームは読み取り/書き込み状態であり、Snapshotが存在します。
+
+
+
+
+| ステータス  a| 
+関係が現在正常な場合、値は* healthy *または* unhealthy *になります。
+
+
+NOTE: 手動またはスケジュールされた更新が失敗した場合や中止された場合、または前回のスケジュールされた更新が遅れた場合は、* unhealthy *の値が表示されることがあります。ステータスのあとの*[詳細]*フィールドには、ステータスが*正常でない*の理由が表示されます。
+
+
+
+| 関係タイプ  a| 
+SnapMirror関係のタイプ。
+
+
+NOTE: SolidFire システムでは、常にに設定されます `extended_data_protection`。ネットアップシステムには、SolidFire システムには適用されない、他の種類の有効な関係があります。
+
+
+
+| 状態  a| 
+クラスタのステータス。
+
+* Healthy：クラスタに重大なエラーは関連付けられていません。
+* Offline：クラスタにアクセスできません。リンクを選択してエラーログを表示します。
+* エラー：このクラスタに関連するエラーがあります。リンクを選択してエラーログを表示します。
+
+
+
+
+| 詳細 | SnapMirror関係の特定に役立つ情報。 
+|===
+
+
 == 詳細については、こちらをご覧ください
 
-https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]
+* https://www.netapp.com/support-and-training/documentation/["ネットアップの製品マニュアル"^]
+* https://docs.netapp.com/us-en/ontap/element-replication/index.html["NetApp Element ソフトウェアと ONTAP 間のレプリケーション"^]
+

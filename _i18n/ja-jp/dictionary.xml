@@ -292,7 +292,6 @@
   <block id="6ecb056d430ebf109cb53b71b4e3bbf6" category="cell">ノードのモデルタイプが表示されます。</block>
   <block id="21dffd11e52f3b29376f4508b2ad0b1a" category="cell">サービスタグ</block>
   <block id="c85128056ac648977b9e0da5daf91c2d" category="cell">ノードに割り当てられた一意のサービスタグ番号。</block>
-  <block id="0b78ef57d4dacade728a829821159de3" category="cell">ノードに割り当てられた管理IPのMIPアドレス。1GbEまたは10GbEネットワークの管理タスクで使用されます。</block>
   <block id="70087224b93e8179deda7438fae8e843" category="cell">クラスタ IP</block>
   <block id="4d08639c19d21e8b1b2dd93fd1ecb110" category="cell">ノードに割り当てられたクラスタIPアドレス。同じクラスタ内のノード間の通信に使用されます。</block>
   <block id="9f4766e9e0e83d660691c78a09d23354" category="cell">レプリケーションポート</block>
@@ -1070,4 +1069,41 @@
   <block id="57829e1c527aadb9862b10c223954f81" category="paragraph">単一のクラスタまたは複数のクラスタの現在の日時またはスケジュールのアラート通知をクラスタレベルで停止して、将来の日時に開始することができます。</block>
   <block id="fb0d7f8aefdf99cea1fcfde269bee06a" category="admonition">1つのクラスタに複数の抑制タイプを設定でき、同じ抑制タイプの複数の選択を含めることができます。スケジュールされた抑制期間中に抑制タイプがすでに存在する場合、そのタイプはグレー表示されます。この抑制タイプを再度選択するには、*既存のオーバーラップ*を選択します。同じ抑制タイプの複数の選択では、重複する時間を設定できます。また、将来の抑制をスケジュールする場合は、異なる時間に設定することもできます。2つの抑制に期間が重複している場合、この機能は、1つの抑制を持つことと同じです。開始時間は、最も早い時点から、最後の時点までです。</block>
   <block id="8c585eacf0d12977061621d6833ec987" category="list-text">通知の抑制を開始する開始日時を選択します。</block>
+  <block id="28b4baca1ac41f0c9cbe42a9ec42628e" category="inline-xref">SnapMirrorエンドポイント</block>
+  <block id="ac1101609fb27790d21f3e5682730a46" category="list-text"><block ref="6106c5f20c38abc927c216f441b22257" category="inline-xref-macro-rx"></block></block>
+  <block id="b7bae3475f98c5511fcd900e6b4c8f8c" category="inline-xref">SnapMirror関係</block>
+  <block id="ad2c46e1bdf00bc2c2373e711d1d2954" category="list-text"><block ref="c593ef727a82bdc9f5c1b753b116f514" category="inline-xref-macro-rx"></block></block>
+  <block id="f17f50f30412e2177a16f9b4da89f874" category="paragraph">選択したクラスタの*[レプリケーション]*&gt;*[SnapMirrorエンドポイント]*ページでは、SnapMirrorエンドポイントに関する次の情報を確認できます。</block>
+  <block id="6bb4d406451e3685e40319c445ae0352" category="cell">エンドポイントID</block>
+  <block id="32246b37b740b49b6825d9f37e2ee6c5" category="cell">エンドポイントID番号。</block>
+  <block id="0e948943e8277507eeeec08bbb91d3b4" category="cell">クラスタ管理IP</block>
+  <block id="6e24b6e3023bd7d9208c26111ae95b8d" category="cell">クラスタ管理IPアドレス。</block>
+  <block id="fef48b3b39a9c7cdf35ffca8bf736a75" category="cell">IPS</block>
+  <block id="ea96be9e75d8d3d690aedae5040edf2f" category="cell">関係</block>
+  <block id="8f8605419f690965c300901a20d62391" category="cell">エンドポイントに対して設定されている関係の数。</block>
+  <block id="718d288064e78f83f1ba4c375c26c029" category="cell">これは、エンドポイントが現在接続されているかどうかを示します。値は* connected *または* disconnected *です。</block>
+  <block id="028ac3812784d5be0fd01695fc043cff" category="paragraph">選択したクラスタの*[レプリケーション]*&gt;*[SnapMirror関係]*ページでは、SnapMirror関係に関する次の情報を確認できます。</block>
+  <block id="6b381cadf674c5e31b229c76f56806c5" category="cell">ソースボリューム</block>
+  <block id="5fc8efaf812ad6d749473c5b1e7a1d08" category="cell">ソースのボリュームID。</block>
+  <block id="3b63d6a8b8cc0fb1c86125151f2eca0a" category="cell">デスティネーションクラスタ</block>
+  <block id="64afd1e289d3d4ac65cd7bae034156d3" category="cell">SnapMirror関係のデスティネーションクラスタの名前。</block>
+  <block id="61bf1d352b9b723607cb778169e813a0" category="cell">デスティネーションボリューム</block>
+  <block id="0ebc9eebbe2a97262f813b92e1f22992" category="cell">SnapMirror関係のデスティネーションボリュームの名前。</block>
+  <block id="46a2a41cc6e552044816a2d04634545d" category="cell">状態</block>
+  <block id="1fdf08bae98f520da3e0d1b2000eabac" category="paragraph">ミラー関係の状態。次の3つの値を指定できます。</block>
+  <block id="8881a06cabd3e842b7977e9044018e5d" category="list-text">uninitialized：デスティネーションボリュームは初期化されていません。</block>
+  <block id="baaef4c79409be356afa390f0a267777" category="list-text">SnapMirrored：デスティネーションボリュームは初期化されており、SnapMirror更新を受信できる状態です。</block>
+  <block id="8ea0f60fec4bd7852564eff6914e37e5" category="list-text">Broken-off：デスティネーションボリュームは読み取り/書き込み状態であり、Snapshotが存在します。</block>
+  <block id="2177b3ffa647aac85952207f57133f55" category="paragraph">関係が現在正常な場合、値は* healthy *または* unhealthy *になります。</block>
+  <block id="163c9089cced4c196e834ce87a1ec90e" category="admonition">手動またはスケジュールされた更新が失敗した場合や中止された場合、または前回のスケジュールされた更新が遅れた場合は、* unhealthy *の値が表示されることがあります。ステータスのあとの*[詳細]*フィールドには、ステータスが*正常でない*の理由が表示されます。</block>
+  <block id="2029c90a49e8add716fcc3051a0c01ff" category="cell">関係タイプ</block>
+  <block id="b2896d0a757d4adea7b0bf1946d16ab9" category="paragraph">SnapMirror関係のタイプ。</block>
+  <block id="2e5e6f53be4c64301d71ec17f9666006" category="admonition">SolidFire システムでは、常にに設定されます<block ref="a6c02c92cdc6c7fe213f68be0ab9ee11" prefix=" " category="inline-code"></block>。ネットアップシステムには、SolidFire システムには適用されない、他の種類の有効な関係があります。</block>
+  <block id="ddf35be1d25ba7857330965fdbcd63ec" category="paragraph">クラスタのステータス。</block>
+  <block id="6c1691f6c440f43922bce2a3183b9614" category="list-text">Healthy：クラスタに重大なエラーは関連付けられていません。</block>
+  <block id="353d8a4aaa6f9c840d2d0330d5cb9610" category="list-text">Offline：クラスタにアクセスできません。リンクを選択してエラーログを表示します。</block>
+  <block id="9810bf56aaa37a450fe2ace2a59a888f" category="list-text">エラー：このクラスタに関連するエラーがあります。リンクを選択してエラーログを表示します。</block>
+  <block id="9f360968c28895acf09b091f83e3603f" category="cell">SnapMirror関係の特定に役立つ情報。</block>
+  <block id="42a1881fef50454fa6bd56b43e9ed96e" category="inline-link">NetApp Element ソフトウェアと ONTAP 間のレプリケーション</block>
+  <block id="ccae24276cef39694a819c260df1defb" category="list-text"><block ref="ccae24276cef39694a819c260df1defb" category="inline-link-rx"></block></block>
 </blocks>
