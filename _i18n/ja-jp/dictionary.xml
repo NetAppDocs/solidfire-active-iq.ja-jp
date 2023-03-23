@@ -1106,4 +1106,5 @@
   <block id="9f360968c28895acf09b091f83e3603f" category="cell">SnapMirror関係の特定に役立つ情報。</block>
   <block id="42a1881fef50454fa6bd56b43e9ed96e" category="inline-link">NetApp Element ソフトウェアと ONTAP 間のレプリケーション</block>
   <block id="ccae24276cef39694a819c260df1defb" category="list-text"><block ref="ccae24276cef39694a819c260df1defb" category="inline-link-rx"></block></block>
+  <block id="f5f48e4a05f564b44c9541295334dd2e" category="paragraph">特定の容量ライセンスプールを表示するには、そのプールに含まれるすべてのクラスタを表示する権限が必要です。親会社と子会社の関係がある場合は、アカウントマネージャーと協力して、これが正しく記録されていることを確認してください。これを行わないと原因 、容量ライセンスプールが使用できなくなる可能性があります。</block>
 </blocks>
