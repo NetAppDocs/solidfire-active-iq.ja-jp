@@ -1014,7 +1014,6 @@
   <block id="1283e547f2c97bde5254234dd71e8920" category="cell">VMwareアラームがトリガーされてSolidFire Active IQ に報告されたときに通知を送信します。</block>
   <block id="8f7bdd75076dbc076948c8a43fa2529c" category="paragraph">SolidFire Active IQ アラートのユーザは、システムでトリガーされる各アラートに対して異なるステータスEメールを受信します。アラートに関連付けられるステータスEメールには、次の3種類があります。</block>
   <block id="472062bb6f5f96a2db31c5e5b3da2b6e" category="admonition">これらのメソッドに加え、SolidFire Active IQ は、クラスタの健常性を監視するためにネットアップのサポートおよびエンジニアリングによって使用される内部のAPI呼び出しをいくつか実行します。これらの呼び出しは、誤ってクラスタの機能を停止する可能性があるため、ドキュメント化されていません。SolidFire Active IQ APIコレクションの一覧が必要な場合は、ネットアップサポートにお問い合わせください。</block>
-  <block id="f107820fc2ea40af48df224b45278cae" category="paragraph">このグラフには、選択したノードでホストされているボリュームの最小IOPSと最大IOPSの設定に基づいて、選択した期間におけるノードのスロットルが表示されます。色は、緑（なし）、黄（制限）、または赤（高）のスロットリング量を表します。詳細については、次のグラフ例を参照してください。</block>
   <block id="1f8599a5bc6899eb5bf58ed4e4161fee" category="summary">SolidFire Active IQ のAll Nodes Viewページについて説明します。</block>
   <block id="0975b9d0e95957f2f96d932db082c1ac" category="doc">All Nodesビュー</block>
   <block id="433600042717615fb07744743de63c31" category="paragraph">All Nodes View *ドロップダウンリストから会社名を選択すると、会社のすべてのノードに関する情報を表示できます。たとえば、スロットルされたノードを表示できます。会社名を選択すると、トップナビゲーションバーの* All Nodes View *が置き換えられます。</block>
@@ -1107,4 +1106,10 @@
   <block id="42a1881fef50454fa6bd56b43e9ed96e" category="inline-link">NetApp Element ソフトウェアと ONTAP 間のレプリケーション</block>
   <block id="ccae24276cef39694a819c260df1defb" category="list-text"><block ref="ccae24276cef39694a819c260df1defb" category="inline-link-rx"></block></block>
   <block id="f5f48e4a05f564b44c9541295334dd2e" category="paragraph">特定の容量ライセンスプールを表示するには、そのプールに含まれるすべてのクラスタを表示する権限が必要です。親会社と子会社の関係がある場合は、アカウントマネージャーと協力して、これが正しく記録されていることを確認してください。これを行わないと原因 、容量ライセンスプールが使用できなくなる可能性があります。</block>
+  <block id="77b5f187e425e8a74f78bc33173a6556" category="paragraph">SolidFire Active IQ のグラフと日付範囲はシームレスに統合されます。日付範囲を選択すると、そのページの*[ノードスロットル]*グラフと*[合計ボリュームスループット]*グラフが、選択した範囲に合わせて調整されます。各グラフには、デフォルトの日付範囲は7日間表示されます。グラフ選択タブからノードを選択すると、これらのグラフは新しく選択したノードに変わります。</block>
+  <block id="ddbda8937e06c693f2a47e57f41d458a" category="paragraph">[ノードのスロットル]*グラフには、選択した期間におけるノードのスロットルが、選択したノードでホストされているボリュームの最小IOPSと最大IOPSの設定に基づいて表示されます。色は調整の量を表します。</block>
+  <block id="03e86b05e1b5286b660c8a23c9f078a6" category="list-text">緑：ノードは調整されていません。ボリュームは、設定されている最大IOPSまで実行できます。</block>
+  <block id="dc8427aa0b7126878455064a038e5809" category="list-text">黄色：ノードのスロットルが制限されています。ボリュームは最大IOPS設定から調整されますが、最小IOPS設定以上のパフォーマンスは維持されます。</block>
+  <block id="960834da3ed67c2325c72e0370fc8205" category="list-text">赤：ノードで高い調整率が発生しています。ボリュームの調整がさらに厳しくなると、パフォーマンスが最小IOPSの設定を下回ることがあります。</block>
+  <block id="504a73ee059265d2d8bb14a8164db243" category="paragraph">[ボリュームの合計スループット]*グラフには、選択したノードのプライマリボリュームのスループットの合計が表示されます。グラフには、ボリュームの読み取りスループットと書き込みスループットの合計が表示されます。メタデータやその他のノードトラフィックは含まれません。また、ノードにボリュームが存在する場合も考慮されます。そのため、ノードからボリュームを転送するとスループットが低下します。</block>
 </blocks>
