@@ -764,7 +764,6 @@
   <block id="cb0b3ac9b7a179d7ab7a6fca23f53ad7" category="cell">関連付けられているSnapshotの数。</block>
   <block id="8aa8c731cfe2c1c5fc7e8d8161be302a" category="cell">512eが有効</block>
   <block id="4b70e4e226aa2663d010aeae818edca9" category="cell">ボリュームで512eが有効になっているかどうか。</block>
-  <block id="49040853732d48deb2df7eebcd95b127" category="cell">プライマリストレージノードの負荷が高いためにボリュームのスロットルが調整されているかどうかを示します。</block>
   <block id="fe6f6567eb042d45b55b29aa9a29df5b" category="cell">ペアリングされているボリューム</block>
   <block id="3864a6411a8582c09e9f190a2d97c876" category="cell">ボリュームがペアリングされているかどうか。</block>
   <block id="bb1bce6ceb9138a27ff4a45ffa2b6cc4" category="cell">ボリューム作成タスクが完了した時刻。</block>
@@ -1112,4 +1111,5 @@
   <block id="dc8427aa0b7126878455064a038e5809" category="list-text">黄色：ノードのスロットルが制限されています。ボリュームは最大IOPS設定から調整されますが、最小IOPS設定以上のパフォーマンスは維持されます。</block>
   <block id="960834da3ed67c2325c72e0370fc8205" category="list-text">赤：ノードで高い調整率が発生しています。ボリュームの調整がさらに厳しくなると、パフォーマンスが最小IOPSの設定を下回ることがあります。</block>
   <block id="504a73ee059265d2d8bb14a8164db243" category="paragraph">[ボリュームの合計スループット]*グラフには、選択したノードのプライマリボリュームのスループットの合計が表示されます。グラフには、ボリュームの読み取りスループットと書き込みスループットの合計が表示されます。メタデータやその他のノードトラフィックは含まれません。また、ノードにボリュームが存在する場合も考慮されます。そのため、ノードからボリュームを転送するとスループットが低下します。</block>
+  <block id="f1fa7b7cc46f8f0571dab3e8216c76eb" category="cell">ボリュームの現在のスロットルを表します。この値には、ボリュームの履歴スロットルは含まれません。</block>
 </blocks>
