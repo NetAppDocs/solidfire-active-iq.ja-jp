@@ -11,12 +11,13 @@ summary: SolidFire Active IQ のQoS管理ページについて説明します。
 
 
 [role="lead"]
-選択したクラスタのサイドパネルにある* QoS管理*ページでは、QoSに関する推奨事項やクラスタ内のノードのスロットルに関する情報を確認できます。
+選択したクラスタのサイドパネルにある*[QoS管理]*ページでは、クラスタ内のノードのQoSに関する推奨事項、スロットル、およびボリュームに関する情報を確認できます。
 
-選択したノードのQoSに関する推奨事項とスロットルに関する情報を表示する方法について説明します。
+選択したノードのQoSに関する推奨事項、スロットル、およびボリュームに関する情報の表示について説明します。
 
 * link:task-active-iq-recommendations.html["推奨事項"]
 * link:task-active-iq-throttling.html["ノードスロットル"]
+* link:task-active-iq-busiest-volumes.html["最もビジーなボリューム"]
 
 
 

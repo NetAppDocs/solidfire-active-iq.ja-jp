@@ -69,6 +69,8 @@ sidebar:
         url: "/task-active-iq-recommendations.html"
       - title: ノードスロットル
         url: "/task-active-iq-throttling.html"
+      - title: 最もビジーなボリューム
+        url: "/task-active-iq-busiest-volumes.html"
     - title: 仮想マシン
       url: "/task-active-iq-virtual-machines.html"
     - title: VMwareアラーム
