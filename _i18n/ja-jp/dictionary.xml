@@ -724,7 +724,6 @@
   <block id="2bc5a323ec4c5f81b720526e8aadd21e" category="cell">セカンダリノードID</block>
   <block id="a8c5372cb84d7d3cefd81f7cca2508d1" category="cell">このボリュームのセカンダリノードのリスト。セカンダリノードの変更など、一時的な状態では複数の値を指定できますが、通常は1つの値が使用されます。</block>
   <block id="e3fa9173825e8d72d3109748c25adb2b" category="cell">QoSのスロットル</block>
-  <block id="b7704dec80bad8b4f8c5564e2d1d6f28" category="paragraph">プライマリストレージノードの負荷が高いためにボリュームのスロットルが調整されているかどうかを示します。</block>
   <block id="40c1f7a2846a63dc74ce6b9dbc7933dc" category="list-text">緑=最大20%</block>
   <block id="89d6f6a6ae8c5ed89ceadff57f866134" category="list-text">黄色= 20%以上</block>
   <block id="a766a96a4550397e3be62686e9dba4bf" category="list-text">赤= 80%を超えています</block>
@@ -742,8 +741,6 @@
   <block id="7d5a20f283f1f159bc8fca5cea5abdf2" category="paragraph">アクティブボリュームのページが開いたら、情報バーに最新のボリュームデータを表示できます。</block>
   <block id="e5e232275261e481cb1332fe1e05f070" category="cell">システムによって生成されたボリュームの ID 。</block>
   <block id="94a1800545581d04983407fd1d145e62" category="cell">ボリュームの合計サイズ。</block>
-  <block id="7da55ffd0ff54b317006c52ea7f2c0e1" category="paragraph">ボリュームの使用状況が表示されます。</block>
-  <block id="abec01fb58480a49a084850b03ff2d7c" category="list-text">赤= 95%を超えています。</block>
   <block id="42bbfc003515ffd17bbf2687a043f11d" category="cell">平均 IOPS</block>
   <block id="e3b8968fd9318f5d739250d54e769ff4" category="cell">過去30分間にボリュームに対して実行された平均IOPS。</block>
   <block id="edd5221a3f19c0c3519847deb797f926" category="cell">平均スループット</block>
@@ -1124,4 +1121,7 @@
   <block id="fb6f38bbf25d3ddbca0c6a827d91cbbc" category="paragraph"><block ref="fb6f38bbf25d3ddbca0c6a827d91cbbc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4cdebd141dff1c095e06cf5208c27b2b" category="paragraph">グラフ内の任意のポイントにマウスポインタを合わせると、読み取り、書き込み、および合計処理のポイントインタイムの詳細が表示されます。選択した期間に該当するボリュームがノードに存在しない場合、点線で表示されます。</block>
   <block id="20b3b5b27ff183797189ac06f1b32a54" category="section-title">最もビジーなノードデータのエクスポート</block>
+  <block id="86d684bea1d4ec8e7ab5dd525434db07" category="paragraph">ボリュームの現在のスロットルを表します。</block>
+  <block id="8affec94c4ca90859e2feacff861a492" category="paragraph">この値には、ボリュームの履歴スロットルは含まれません。</block>
+  <block id="b58d6152d74cfc9445a90c470e4070bc" category="paragraph">ボリュームの使用率が表示されます。</block>
 </blocks>
