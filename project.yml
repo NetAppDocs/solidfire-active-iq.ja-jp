@@ -79,25 +79,5 @@ sidebar:
       url: "/task-active-iq-all-nodes-view.html"
   - title: トラブルシューティングとサポート
     url: "/task-active-iq-troubleshoot-support.html"
-homepage:
-  tiles:
-  - title: SolidFire Active IQ ツールを使用します
-    links:
-    - title: はじめに
-      url: "/task-active-iq-get-started-overview.html"
-    - title: SolidFire Active IQ を管理します
-      url: "/task-active-iq-manage-overview.html"
-  - title: 製品ドキュメント
-    links:
-    - title: SolidFire とElementソフトウェア
-      url: https://docs.netapp.com/us-en/element-software/index.html
-    - title: NetApp HCI
-      url: https://docs.netapp.com/us-en/hci/index.html
-    - title: ネットアップの製品マニュアル
-      url: https://www.netapp.com/support-and-training/documentation
-  - title: トラブルシューティングを行う
-    links:
-    - title: トラブルシューティングを行う
-      url: "/task-active-iq-troubleshoot-support.html"
-    - title: テクニカルサポートにお問い合わせください
-      url: https://mysupport.netapp.com/site/global/dashboard
+  - title: 法的通知
+    url: "/legal-notices.html"
